@@ -1,0 +1,37 @@
+\begin{thebibliography}{}
+
+\bibitem [\protect \citeauthoryear {%
+Sheth%
+\ \BBA {} Shah%
+}{%
+Sheth%
+\ \BBA {} Shah%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+sheth_predicting_2023}
+\APACinsertmetastar {%
+sheth_predicting_2023}%
+\begin{APACrefauthors}%
+Sheth, D.%
+\BCBT {}\ \BBA {} Shah, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{{\APACmonth{02}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Predicting stock market using machine learning: best and
+  accurate way to know future stock prices} {Predicting stock market using
+  machine learning: best and accurate way to know future stock prices}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of System Assurance Engineering
+  and Management}{14}{1}{1--18}.
+\newblock
+\begin{APACrefURL}
+  [{2024-04-07}]\url{https://link.springer.com/10.1007/s13198-022-01811-1}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1007/s13198-022-01811-1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}
