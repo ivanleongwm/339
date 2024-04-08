@@ -1,6 +1,103 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Habbab%
+\ \BBA {} Kampouridis%
+}{%
+Habbab%
+\ \BBA {} Kampouridis%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+habbab_-depth_2024}
+\APACinsertmetastar {%
+habbab_-depth_2024}%
+\begin{APACrefauthors}%
+Habbab, F\BPBI Z.%
+\BCBT {}\ \BBA {} Kampouridis, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {An in-depth investigation of five machine learning
+  algorithms for optimizing mixed-asset portfolios including {REITs}} {An
+  in-depth investigation of five machine learning algorithms for optimizing
+  mixed-asset portfolios including {REITs}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Expert Systems with Applications}{235}{}{121102}.
+\newblock
+\begin{APACrefURL}
+  \url{https://www.sciencedirect.com/science/article/pii/S0957417423016044}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{https://doi.org/10.1016/j.eswa.2023.121102}
+  \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Nareit%
+}{%
+Nareit%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+noauthor_global_2024}
+\APACinsertmetastar {%
+noauthor_global_2024}%
+\begin{APACrefauthors}%
+Nareit.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+\APACrefbtitle {Global {Real} {Estate} {Investment}.} {Global {Real} {Estate}
+  {Investment}.}
+\newblock
+\begin{APACrefURL}
+  [{2024-04-08}]\url{https://www.reit.com/investing/global-real-estate-investment}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Obthong%
+, Tantisantiwong%
+, Jeamwatthanachai%
+\BCBL {}\ \BBA {} Wills%
+}{%
+Obthong%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+obthong_survey_2020}
+\APACinsertmetastar {%
+obthong_survey_2020}%
+\begin{APACrefauthors}%
+Obthong, M.%
+, Tantisantiwong, N.%
+, Jeamwatthanachai, W.%
+\BCBL {}\ \BBA {} Wills, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{{\APACmonth{05}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A survey on machine learning for stock price prediction:
+  algorithms and techniques} {A survey on machine learning for stock price
+  prediction: algorithms and techniques}.{\BBCQ}
+\newblock
+\BIn{} (\BPGS\ 63--71).
+\newblock
+\begin{APACrefURL} [{2024-04-08}]\url{https://eprints.soton.ac.uk/437785/}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Num Pages: 9}
+\newblock
+\begin{APACrefDOI} \doi{10.5220/0009340700630071} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Sheth%
 \ \BBA {} Shah%
 }{%
@@ -32,6 +129,37 @@ Sheth, D.%
   \end{APACrefURL}
 \newblock
 \begin{APACrefDOI} \doi{10.1007/s13198-022-01811-1} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tostevin%
+\ \BBA {} Rushton%
+}{%
+Tostevin%
+\ \BBA {} Rushton%
+}{%
+{\protect \APACyear {2023}}%
+}]{%
+tostevin_total_2023}
+\APACinsertmetastar {%
+tostevin_total_2023}%
+\begin{APACrefauthors}%
+Tostevin, P.%
+\BCBT {}\ \BBA {} Rushton, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{{\APACmonth{09}}}{}.
+\newblock
+\APACrefbtitle {Total {Value} of {Global} {Real} {Estate}: {Property} remains
+  the world’s biggest store of wealth.} {Total {Value} of {Global} {Real}
+  {Estate}: {Property} remains the world’s biggest store of wealth.}
+\newblock
+\begin{APACrefURL}
+  [{2024-04-08}]\url{https://www.savills.com/impacts/market-trends/the-total-value-of-global-real-estate-property-remains-the-worlds-biggest-store-of-wealth.html}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Section: Market trends}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
