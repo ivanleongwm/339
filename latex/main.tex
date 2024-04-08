@@ -11,6 +11,12 @@
 \usepackage{pdflscape}
 \usepackage{float}
 \usepackage{siunitx,booktabs}
+\usepackage{pgfplotstable}
+\usepackage{pgfplots}
+\usepackage{subcaption}
+\pgfplotsset{
+        compat=1.3,
+    }
 \sisetup{group-digits=false}
 
 \doublespacing
@@ -135,7 +141,7 @@ In order to better communicate ideas, the key financial terminologies and formul
 The relationship between stocks, REITs and Portfolios can be illustrated in the figure below.
 \begin{figure}[H]
   \centerline{\includegraphics[width=9cm]{Stock_Porfolio_Reit}}
-  \caption{Financial Terminology}\label{visina8}
+  \caption{Stock vs REIT vs Portfolio}\label{visina8}
   \label{fig:Stock_Porfolio_Reit}
   \end{figure}
 \subsection{Stock}
@@ -215,7 +221,7 @@ Conventionally, we need to own a certain stock before we can sell it. However, m
 In this subsection, various measures of investment performance and how they are applied in the paper are discussed. It covers the two main schools of thought in investment analysis, technical and fundamental analysis before discussing Alpha formulas.
 
 \subsection{Technical Analysis with Price Volume Data}
-Technical analysis is one method of evaluating investments in stocks and identifying prospective stocks to invest in. It focusses primarily on price and volume data. Table \ref{table:technical_data} provides the key features required for technical analysis.
+Technical analysis is one method of evaluating investments in stocks and identifying prospective stocks to invest in. It focusses primarily on identifying short term trends in price and volume data. Table \ref{table:technical_data} provides the key features required for technical analysis.
 
 
 \begin{table}[H]
@@ -233,8 +239,83 @@ Technical analysis is one method of evaluating investments in stocks and identif
   \label{table:technical_data}
 \end{table}
 
+\begin{itemize}
 
-\subsubsection{Profits and Loss (PnL)}
+  \item {Open: The price of the stock at the start of a trading day}
+  \item {High: The highest price of the stock in a trading day}
+  \item {Low: The lowest price of the stock in a trading day}
+  \item {Close: The price of the stock when the market closes for the day}
+  \item {Volume: The total number of shares traded throughout the day}
+  
+\end{itemize}
+The features Open, High, Low and Close are derived from the Price of a stock at different points in the day and trends of these features can indicate future movements, while volume signals the strength of a price trend.
+
+
+\subsubsection{Profit and Loss (PnL)}
+Profits from the purchase of a single stock arises when the selling price of the stock is greater than the original purchase price. However, if the share price falls below the original purchase price then a loss is incurred. Profit or Loss is given by the formula: 
+\begin{equation*}
+  Profit/Loss = Current Price \times Quantity - Purchase Price \times Quantity
+\end{equation*}
+
+
+\pgfplotstableread{2.pnlDay1.dat}\datatable
+\pgfplotstableread{2.pnlDay3.dat}\datatable
+\begin{figure}[H]
+  \centering
+  \centerline{Prices and Profits from Stock A, Purchasing on Different Days}
+  \par\medskip
+  \begin{subfigure}{.475\linewidth}
+    \centering
+  \begin{tikzpicture}
+  \begin{axis}[
+    small,
+    xlabel=Day,
+    ylabel=\$,
+    legend style={at={(0.5,-0.3)},anchor=north},
+    smooth,
+    ]
+  \addplot[mark=*,blue] table [x=Day, y=$SharePrice$]{2.pnlDay1.dat};
+  \addlegendentry{$SharePrice$ series}
+  \addplot[mark=x,green] table [x=Day, y=$Profit$]{2.pnlDay1.dat};
+  \addlegendentry{$Profit$ series}
+  \end{axis}
+  \end{tikzpicture}
+  \caption{Day 1 Purchase}
+  \label{graph: prices_and_profits}
+\end{subfigure}%
+\hfill%
+\begin{subfigure}{.475\linewidth}
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      small,
+      xlabel=Day,
+      ylabel=\$,
+      legend style={at={(0.5,-0.3)},anchor=north},
+      smooth,
+      ]
+    \addplot[mark=*,blue] table [x=Day, y=$SharePrice$]{2.pnlDay3.dat};
+    \addlegendentry{$SharePrice$ series}
+    \addplot[mark=x,red] table [x=Day, y=$Profit$]{2.pnlDay3.dat};
+    \addlegendentry{$Profit$ series}
+    \end{axis}
+    \end{tikzpicture}
+    \caption{Day 3 Purchase}
+    \label{graph: prices_and_profits2}
+  \end{subfigure}
+  \caption{}
+  \label{figure: prices_and_profits_main}
+\end{figure}
+
+It's important to note that profits or losses are only realised when the closing transaction is made i.e. when the stock is sold. Figure \ref{figure: prices_and_profits_main} illustrates that buying the same stock on day 1 versus day 3 can have vastly different results. \\
+
+When a stock is shorted, a rise in price will result in a loss because it becomes more expensive for the investor to repurchase the share. Hence, for shorting the Profit or Loss formula is negated:
+\begin{equation*}
+  Profit/Loss = -(Current Price \times Quantity - Purchase Price \times Quantity)
+\end{equation*}
+
+
+
 \subsubsection{Risk and Volatility}
 \subsubsection{Sharpe Ratio}
 \subsection{Fundamental Analysis with Financial Statements}
