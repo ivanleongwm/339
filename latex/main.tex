@@ -10,6 +10,9 @@
 \usepackage[natbibapa]{apacite}
 \usepackage{pdflscape}
 \usepackage{float}
+\usepackage{siunitx,booktabs}
+\sisetup{group-digits=false}
+
 \doublespacing
 \setlength{\parindent}{0pt}
 \renewcommand{\baselinestretch}{1.3} 
@@ -103,7 +106,7 @@ Lastly, as most of past research is centered on price prediction, there is a nee
 \section{Major Contributions and Creativity}
 The first major contribution of this project is the analysis on REITs stock datasets with more than 150 features of technical and fundamental indicators. This expands the dimensionality of the input training data significantly beyond price-volume features to incorporate REIT company data from financial statements. The comprehensive dataset covers 150 out of the total worldwide population of 893 REITs and includes up to 20 years of historical data.\\
 
-Creativity is demonstrated in the writing of a Genetic Search Algorithm that searches for outperforming REIT Alphas. It resulted in the second contribution of a trading model with superior returns that significantly outperforms the market indexes.\\ 
+Creativity is demonstrated in the writing of a Genetic Search Algorithm that searches for outperforming REIT Alphas. It resulted in the second major contribution of a trading model with superior returns that significantly outperforms the market indexes.\\ 
 
 The third contribution is the implementation of a trading agent or trade execution logic that acts on individual REIT price predictions to allocate funds to selected REITS in a portfolio.\\
 
@@ -122,17 +125,115 @@ Overall, this research paper has expanded the body of knowledge on the applicati
 \titleformat{\chapter}[display]{\Large}{\centering
   \MakeUppercase{\chaptername}\quad{\Huge\thechapter}}{10pt}{\titlerule[.5pt]\vspace{10pt}\centering
   \MakeUppercase}[\vspace{10pt}{\titlerule[.5pt]}]% <-- spacing of title bar
-\titlespacing{\chapter}{0pt}{-23pt}{1cm}% <-- spacing of title bar
+\titlespacing{\chapter}{0pt}{-80pt}{1cm}% <-- spacing of title bar
 \renewcommand{\thechapter}{\arabic{chapter}}
+
 \pagenumbering{arabic}
 \chapter{Financial Terminology and Concepts}
+In order to better communicate ideas, the key financial terminologies and formulas will be explained. Particularly the difference between a stock, REIT and a portfolio, the difference between technical and fundamental analysis and the concept of Alphas. This builds the foundation for further discussions on the measures of portfolio performance, namely, profits/losses and the sharpe ratio. Other methods of analysis such as sentiment and macro-economic analysis is also briefly discussed. 
 \section{Key Terms}
+The relationship between stocks, REITs and Portfolios can be illustrated in the figure below.
+\begin{figure}[H]
+  \centerline{\includegraphics[width=9cm]{Stock_Porfolio_Reit}}
+  \caption{Financial Terminology}\label{visina8}
+  \label{fig:Stock_Porfolio_Reit}
+  \end{figure}
 \subsection{Stock}
+A stock also called a share, represents ownership over a company's assets. Each stock is represented in the market by a unique identifier called a ticker. For instance, Apple's ticker is "AAPL". The proportion ownership depends on how many shares are owned out of the total number of shares in the market and stocks of publicily listed companies can be purchased on the stock exchange. Over time, share prices can rise and fall, and owners can receive a share of the company's profits through dividends. The daily movement of the share prices over time will be represented in this paper by the formula:
+
+\begin{itemize}
+
+  \item {Prices: P is the price of a specific stock at a particular time}
+  \item {Date: T in this paper is the daily date}
+  \item {Ticker: i is the stock ticker for a specific stock}
+  
+\end{itemize}
+\begin{equation*}
+  \overrightarrow{P}\textsubscript{i,1:T} =  
+  \begin{bmatrix}
+    p\textsubscript{i,1} \\
+    p\textsubscript{i,2} \\
+    \vdots \\
+    p\textsubscript{i,T} \\
+  \end{bmatrix}
+  \in \mathbb{R}_+^{T}
+\end{equation*}
+
 \subsection{Real Estate Investment Trusts (REITs)}
+A REIT company invests in properties. Typically these companies invest or own a mix of housing, commercial or industrial properties. Buying shares of REITs allow investors to own a share of the real estate that these REITS are managing and indirectly invest their monies in the real estate sector. Of course, each of the 893 REITs are different companies which own a wide range of different properties across the world. In this paper, a REIT is used to refer to the stock of a REIT company. A REIT is a type of stock.
+
 \subsection{Portfolio}
+A portfolio is a collection of stocks i.e a portfolio is a combination of more than one stock. For example, the portfolio in Figure ~\ref{fig:Stock_Porfolio_Reit} consists of 10\% of stock A, 11\% of stock B and 9\% of stock C. The relative proportions of each stock in a portfolio can be represented by weights. This paper will represent a portfolio of stocks with the vector and matrix below:
+\begin{itemize}
+
+  \item {Weight: W is the percentage value of a ticker in the portfolio.}
+  
+\end{itemize}
+
+
+\begin{equation*}
+  \overrightarrow{W}\textsubscript{i,1:T}\overrightarrow{P}\textsubscript{i,1:T} = 
+  \begin{bmatrix}
+    \overrightarrow{W}\textsubscript{1,1:T}\overrightarrow{P}\textsubscript{1,1:T},\;
+    \overrightarrow{W}\textsubscript{2,1:T}\overrightarrow{P}\textsubscript{2,1:T},\;
+    \ldots,\;
+    \overrightarrow{W}\textsubscript{i,1:T}\overrightarrow{P}\textsubscript{2,1:T}
+  \end{bmatrix}
+\end{equation*}
+
+\begin{equation*}
+= 
+  \begin{bmatrix}
+    w\textsubscript{1,1}\:p\textsubscript{1,1},&
+    w\textsubscript{2,1}\:p\textsubscript{2,1},&
+    \ldots,&
+    w\textsubscript{i,1}\:p\textsubscript{i,1} 
+    \\
+    w\textsubscript{1,2}\:p\textsubscript{1,2},&
+    w\textsubscript{2,2}\:p\textsubscript{2,2},&
+    \ldots,&
+    w\textsubscript{i,2}\:p\textsubscript{i,2}
+    \\
+    \vdots&\vdots&\ddots&\vdots
+    \\
+    w\textsubscript{1,T}\:p\textsubscript{1,T},&
+    w\textsubscript{2,T}\:p\textsubscript{2,T},&
+    \ldots,&
+    w\textsubscript{i,T}\:p\textsubscript{i,T}
+  \end{bmatrix}
+  \in \mathbb{R}_+^{M x T}
+\end{equation*}
+\\
+As with prices, the weights of each stock ticker can change daily if the value of the portfolio is redistributed. Depending on the weights assigned and what stocks are in the portfolio, the total portfolio value can change rise or fall. The decision of which stocks to select as part of a portfolio and how much of each stock to buy or hold at every point in time is the central idea of portfolio optimisation. This paper seeks to develop an effective model to select stocks and determine these weights.
+
+\subsection{Shorting}
+Conventionally, we need to own a certain stock before we can sell it. However, market makers also allow investors to borrow stocks to sell them first, with the contractual obligation for the investor to repurchase the stocks from the market at a later date to return to the market maker. This mechanism of selling first and buying back later is called shorting and is represented by a negative weight. This paper's analysis allows shorting.
+
+
 
 \section{Evaluating Investments with Data}
+In this subsection, various measures of investment performance and how they are applied in the paper are discussed. It covers the two main schools of thought in investment analysis, technical and fundamental analysis before discussing Alpha formulas.
+
 \subsection{Technical Analysis with Price Volume Data}
+Technical analysis is one method of evaluating investments in stocks and identifying prospective stocks to invest in. It focusses primarily on price and volume data. Table \ref{table:technical_data} provides the key features required for technical analysis.
+
+
+\begin{table}[H]
+  \centering
+  \caption{Daily Price Volume Data for ticker PLD}
+  \begin{tabular}{@{} l *{5}{S[table-format=-1.7]} @{}} 
+  \toprule
+  {Date} & {Open} & {High} & {Low} & {Close} & {Volume}\\ % center-set header entries
+  \midrule
+  31/08/2023    &  125.36  & 125.91 &  123.89 &  124.2 & 3277600\\
+  01/09/2023   &  125.4  & 125.57 &  124.05 &  124.59 & 1591000\\
+  05/09/2023 &  125.36  & 125.91 &  123.89 &  122.05 & 2854100\\
+  \bottomrule
+  \end{tabular}
+  \label{table:technical_data}
+\end{table}
+
+
 \subsubsection{Profits and Loss (PnL)}
 \subsubsection{Risk and Volatility}
 \subsubsection{Sharpe Ratio}
