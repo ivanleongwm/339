@@ -1,6 +1,36 @@
 \begin{thebibliography}{}
 
 \bibitem [\protect \citeauthoryear {%
+Aguilar-Rivera%
+, Valenzuela-Rendón%
+\BCBL {}\ \BBA {} Rodríguez-Ortiz%
+}{%
+Aguilar-Rivera%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2015}}%
+}]{%
+aguilar-rivera_genetic_2015}
+\APACinsertmetastar {%
+aguilar-rivera_genetic_2015}%
+\begin{APACrefauthors}%
+Aguilar-Rivera, A.%
+, Valenzuela-Rendón, M.%
+\BCBL {}\ \BBA {} Rodríguez-Ortiz, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2015}{{\APACmonth{11}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Genetic algorithms and {Darwinian} approaches in
+  financial applications: {A} survey} {Genetic algorithms and {Darwinian}
+  approaches in financial applications: {A} survey}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Expert Systems with Applications}{42}{}{7684--7697}.
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.eswa.2015.06.001} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
 Habbab%
 \ \BBA {} Kampouridis%
 }{%
@@ -36,17 +66,17 @@ Habbab, F\BPBI Z.%
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
-Nareit%
+{Nareit}%
 }{%
-Nareit%
+{Nareit}%
 }{%
 {\protect \APACyear {2024}}%
 }]{%
-noauthor_global_2024}
+nareit_global_2024}
 \APACinsertmetastar {%
-noauthor_global_2024}%
+nareit_global_2024}%
 \begin{APACrefauthors}%
-Nareit.%
+{Nareit}.%
 \end{APACrefauthors}%
 \unskip\
 \newblock
@@ -58,6 +88,37 @@ Nareit.%
 \begin{APACrefURL}
   [{2024-04-08}]\url{https://www.reit.com/investing/global-real-estate-investment}
   \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Oberlechner%
+}{%
+Oberlechner%
+}{%
+{\protect \APACyear {2001}}%
+}]{%
+oberlechner_importance_2001}
+\APACinsertmetastar {%
+oberlechner_importance_2001}%
+\begin{APACrefauthors}%
+Oberlechner, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2001}{{\APACmonth{01}}}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Importance of technical and fundamental analysis in the
+  {European} foreign exchange market} {Importance of technical and fundamental
+  analysis in the {European} foreign exchange market}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{International Journal of Finance \&
+  Economics}{6}{1}{81--93}.
+\newblock
+\begin{APACrefURL}
+  [{2024-04-08}]\url{https://onlinelibrary.wiley.com/doi/10.1002/ijfe.145}
+  \end{APACrefURL}
+\newblock
+\begin{APACrefDOI} \doi{10.1002/ijfe.145} \end{APACrefDOI}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -95,6 +156,35 @@ Obthong, M.%
 \APACrefnote{Num Pages: 9}
 \newblock
 \begin{APACrefDOI} \doi{10.5220/0009340700630071} \end{APACrefDOI}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Ruse%
+}{%
+Ruse%
+}{%
+{\protect \APACyear {1975}}%
+}]{%
+ruse_charles_1975}
+\APACinsertmetastar {%
+ruse_charles_1975}%
+\begin{APACrefauthors}%
+Ruse, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{1975}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Charles {Darwin}'s {Theory} of {Evolution}: {An}
+  {Analysis}} {Charles {Darwin}'s {Theory} of {Evolution}: {An}
+  {Analysis}}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{Journal of the History of Biology}{8}{2}{219--241}.
+\newblock
+\begin{APACrefURL} [{2024-04-08}]\url{https://www.jstor.org/stable/4330635}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{Publisher: Springer}
 \PrintBackRefs{\CurrentBib}
 
 \bibitem [\protect \citeauthoryear {%
@@ -160,6 +250,65 @@ Tostevin, P.%
   \end{APACrefURL}
 \newblock
 \APACrefnote{Section: Market trends}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Tulchinsky%
+}{%
+Tulchinsky%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+tulchinsky_finding_2020}
+\APACinsertmetastar {%
+tulchinsky_finding_2020}%
+\begin{APACrefauthors}%
+Tulchinsky, I.%
+\end{APACrefauthors}%
+\ (\BED).
+\unskip\
+\newblock
+\APACrefYear{2020}.
+\newblock
+\APACrefbtitle {Finding alphas: a quantitative approach to building trading
+  strategies} {Finding alphas: a quantitative approach to building trading
+  strategies}\ (\PrintOrdinal{Second edition}\ \BEd).
+\newblock
+\APACaddressPublisher{Chichester, West Sussex}{Wiley}.
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wang%
+\ \protect \BOthers {.}}{%
+Wang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+wang_alpha-gpt_2023}
+\APACinsertmetastar {%
+wang_alpha-gpt_2023}%
+\begin{APACrefauthors}%
+Wang, S.%
+, Yuan, H.%
+, Zhou, L.%
+, Ni, L\BPBI M.%
+, Shum, H\BHBI Y.%
+\BCBL {}\ \BBA {} Guo, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{{\APACmonth{07}}}{}.
+\newblock
+\APACrefbtitle {Alpha-{GPT}: {Human}-{AI} {Interactive} {Alpha} {Mining} for
+  {Quantitative} {Investment}.} {Alpha-{GPT}: {Human}-{AI} {Interactive}
+  {Alpha} {Mining} for {Quantitative} {Investment}.}
+\newblock
+\APACaddressPublisher{}{arXiv}.
+\newblock
+\begin{APACrefURL} [{2024-04-07}]\url{http://arxiv.org/abs/2308.00016}
+  \end{APACrefURL}
+\newblock
+\APACrefnote{arXiv:2308.00016 [cs, q-fin]}
 \PrintBackRefs{\CurrentBib}
 
 \end{thebibliography}
