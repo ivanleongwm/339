@@ -1,58 +1,54 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
-Reallocating 'name_of_file' (item size: 1) to 8 items.
-The style file: apacite.bst
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 11 items.
-Reallocating 'glb_str_end' (item size: 4) to 20 items.
-Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
-Reallocating 'global_strs' (item size: 1) to 4000000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 9000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
 Database file #1: references.bib
-apacite.bst [2013/07/21 v6.03 APA bibliography style]
-You've used 10 entries,
-            6951 wiz_defined-function locations,
-            1342 strings with 13173 characters,
-and the built_in function-call counts, 20268 in all, are:
-= -- 2428
-> -- 156
-< -- 1045
-+ -- 1030
-- -- 22
-* -- 1389
-:= -- 3925
-add.period$ -- 43
-call.type$ -- 10
-change.case$ -- 182
+Warning--empty journal in cao_fundamental_2021
+Warning--empty booktitle in habbab_machine_2022
+Warning--empty booktitle in obthong_survey_2020
+Warning--empty journal in shakhla_stock_2020
+Warning--empty journal in yuan_garch_2017
+You've used 22 entries,
+            2118 wiz_defined-function locations,
+            612 strings with 7960 characters,
+and the built_in function-call counts, 6800 in all, are:
+= -- 642
+> -- 345
+< -- 3
++ -- 138
+- -- 114
+* -- 452
+:= -- 1140
+add.period$ -- 66
+call.type$ -- 22
+change.case$ -- 123
 chr.to.int$ -- 0
-cite$ -- 20
-duplicate$ -- 480
-empty$ -- 808
-format.name$ -- 255
-if$ -- 3738
+cite$ -- 27
+duplicate$ -- 246
+empty$ -- 540
+format.name$ -- 114
+if$ -- 1409
 int.to.chr$ -- 0
-int.to.str$ -- 30
-missing$ -- 0
-newline$ -- 278
-num.names$ -- 81
-pop$ -- 439
+int.to.str$ -- 22
+missing$ -- 15
+newline$ -- 112
+num.names$ -- 45
+pop$ -- 163
 preamble$ -- 1
-purify$ -- 52
+purify$ -- 101
 quote$ -- 0
-skip$ -- 1126
+skip$ -- 191
 stack$ -- 0
-substring$ -- 1102
-swap$ -- 295
-text.length$ -- 38
+substring$ -- 316
+swap$ -- 42
+text.length$ -- 3
 text.prefix$ -- 0
-top$ -- 1
-type$ -- 864
-warning$ -- 0
-while$ -- 97
-width$ -- 0
-write$ -- 333
+top$ -- 0
+type$ -- 86
+warning$ -- 5
+while$ -- 64
+width$ -- 24
+write$ -- 229
+(There were 5 warnings)

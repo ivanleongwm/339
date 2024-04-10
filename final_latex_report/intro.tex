@@ -1,0 +1,28 @@
+\setcounter{chapter}{1}
+\renewcommand{\thechapter}{\arabic{chapter}}
+\pagenumbering{arabic}
+\setcounter{chapter}{0}
+\chapter{Introduction}
+The saying goes that once a profitable trading formula has been discovered and traded on by enough people, its profits will be eroded away and it will cease to be profitable. Traders and investors appear to be playing a never-ending game of "Hide-and-Seek" in search of profitable trading strategies. Due to the evolving nature of the financial markets, traditional financial time-series forecasting models which are static in nature are becoming less effective than Machine Learning models and dynamic algorithms in identifying the best investments \cite{sheth_predicting_2023}. The success of Machine Learning has led to numerous research papers applying a myriad of Machine Learning techniques to predict stock prices \cite{obthong_survey_2020}. However, fewer papers apply these approaches in the Real Estate sector and these papers largely focus on future stock price prediction rather than portfolio allocation as a whole \cite{habbab_-depth_2024}. Many of these papers also use price-volume data without fundamental financial data as inputs. In 2022, the global real estate sector was worth more than \$380 trillion and worth more than the global equity and bond markets combined \cite{tostevin_total_2023}, with approximately 893 listed Real Estate Investment Trusts (REITs) \cite{nareit_global_2024}. Hence, addressing the research gaps in this sector is particularly valuable.
+
+
+\section{Problem Definition}
+The aim of this report is to develop an effective real estate portfolio optimisation model that maximises profits, minimises risks and outperforms the market indexes with a sharpe ratio of more than 2. A novel approach of applying Genetic Algorithms to search for outperforming Alpha formulas, as well as, three Machine Learning models, namely, Multiple Linear Regression (MLR), Neural Networks (NN) and Long-Short Term Memory (LSTM) are used to construct models. A trading agent is also constructed to allocate funds to the portfolio based on the results from the models. The input data to the Machine Learning models will be extended beyond price-volume data to include fundamental stock data. The models will be trained on 10 years worth of real market data. Then, the performances of these approaches will be compared with traditional financial models and the market indexes.
+
+\section{Motivations}
+Interviews of traders and financial journalists have revealed that both technical and fundamental analysis are used for forecasting investments, for shorter and medium to long term investment horizons respectively \cite{oberlechner_importance_2001}. Given that most investments in real estate are meant for the medium to long term, the lack of fundamental data inputs for REITs stock price predictions reveals a pressing need for fundamental data to be incorporated. \\ 
+
+In the field of quantitative trading, quant firms seek to develop predictive algorithms for quantitative trading called "Alphas" that determine how capital is allocated to portfolios profitably \cite{tulchinsky_finding_2019}. What began with investment experts manually constructing Alpha formulas has gradually been replaced with automated alpha mining techniques that employ Machine Learning algorithms \cite{wang_alpha-gpt_2023}. There appears to be an opportunity to apply the concept of quantitative finance Alphas for Real Estate portfolio allocation. In addition, researchers have been inspired by Charles Darwin's theory of evolution \cite{ruse_charles_1975} to develop a Genetic Algorithm and have applied it in finance \cite{aguilar-rivera_genetic_2015}. Synthesising these two ideas, presents a new and innovative approach to use Genetic Algorithms to search for Alphas in the Real Estate sector. \\
+
+Lastly, as most of past research is centered on price prediction, there is a need to develop trade execution logic to allocate portfolios based on these predictions.
+
+
+
+\section{Major Contributions and Creativity}
+The first major contribution of this project is the analysis on REITs stock datasets with more than 150 features of technical and fundamental indicators. This expands the dimensionality of the input training data significantly beyond price-volume features to incorporate REIT company data from financial statements. The comprehensive dataset covers 150 out of the total worldwide population of 893 REITs and includes up to 20 years of historical data.\\
+
+Creativity is demonstrated in the writing of a Genetic Search Algorithm that searches for outperforming REIT Alphas. It resulted in the second major contribution of a trading model with superior returns that significantly outperforms the market indexes.\\ 
+
+The third contribution is the implementation of a trading agent or trade execution logic that acts on individual REIT price predictions to allocate funds to selected REITS in a portfolio.\\
+
+Overall, this research paper has expanded the body of knowledge on the application of Alphas and Machine Learning models in Optimising Real Estate Portfolios.
