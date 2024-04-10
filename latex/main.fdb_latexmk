@@ -1,16 +1,16 @@
 # Fdb version 4
-["bibtex main"] 1712765321.56366 "main.aux" "main.bbl" "main" 1712765324.3867 0
+["bibtex main"] 1712775783.76551 "main.aux" "main.bbl" "main" 1712775786.54681 0
   "./references.bib" 1712755917 84354 4c39563303d3483380c451642dc68d03 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1712765323 13107 d84bb1927dfbf94c011a495991799d9d "pdflatex"
+  "main.aux" 1712775785 13511 efa8772059c2ee5961e3d2bbda437a90 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1712765321.76458 "c:/Users/pc/Desktop/Thesis/339/latex/main.tex" "main.pdf" "main" 1712765324.38729 0
+["pdflatex"] 1712775783.9773 "c:/Users/pc/Desktop/Thesis/339/latex/main.tex" "main.pdf" "main" 1712775786.54726 0
   "2.pnlDay1.dat" 1712594713 64 2dae1e0246742a6f623652d4f8a62478 ""
   "2.pnlDay3.dat" 1712594704 65 c0fa4fa1aa91c479e4fc51de8fe665c2 ""
-  "C:/Users/pc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1712764160 82507 a9eef8696c92627b87e9975edea03b2a ""
+  "C:/Users/pc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1712773787 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/pc/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1200.pk" 1712417780 14064 1bfec51be2ebd44f4a9f57e820aa88d6 ""
   "C:/Users/pc/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi657/tcrm1000.pk" 1712594058 12648 08ee611f250f38f11e3ef2d5bea13f9f ""
   "C:/Users/pc/AppData/Local/MiKTeX/fonts/pk/ljfour/public/bbold/dpi600/bbold12.pk" 1712417779 14804 6782ba8019cb2bc9e09f1911ba4b3c4b ""
@@ -186,6 +186,7 @@
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty" 1696169587 72619 ee90b6612147680fd73c3b1406a74245 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/caption/subcaption.sty" 1696169587 12494 0c0cdb824278a4d51cefeb2e79901315 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/changepage/changepage.sty" 1256021817 4523 a9044e2dc40e764dac60d2acda7ae919 ""
+  "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/colortbl/colortbl.sty" 1709026697 12355 ec728d2e4c37cf8919ee2eff9b75ad0c ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/eso-pic/eso-pic.sty" 1683737457 11876 6ef493863ae0d7a984706973240c2237 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/etoolbox/etoolbox.sty" 1601897756 46845 3b58f70c6e861a13d927bff09d35ecbc ""
@@ -231,21 +232,23 @@
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/setspace/setspace.sty" 1670403145 22490 8cac309b79a4c53a4ffce4b1b07aead0 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/siunitx/siunitx.sty" 1707992430 331158 9a13ba2b112e95c0c101fa5b4db1d792 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/titlesec/titlesec.sty" 1699094857 48766 0b93839be28e9744a24c45075c75b2e2 ""
+  "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/tools/afterpage.sty" 1700599895 4085 b09ffbe3858cbb65749bb88cc092d0fc ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/tools/array.sty" 1700599895 12667 e4b5eb11e4b7239e6c8a52bbe074a6c6 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/tools/calc.sty" 1700599895 10214 547fd4d29642cb7c80bf54b49d447f01 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/translations/dicts/translations-basic-dictionary-english.trsl" 1644048522 5588 0c1628daf15f4411ff1f463114c634a3 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/translations/translations.sty" 1644048522 44247 2188b95d0ee74e31eca4d316263c58a7 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/pc/Desktop/Thesis/339/latex/main.tex" 1712765315 35867 d9a48a3ac358d7c0b150e1432f246e12 ""
+  "c:/Users/pc/Desktop/Thesis/339/latex/main.tex" 1712775780 37956 a553e6f3a05e8cb67ca8c4da14c3289f ""
   "graphics/1.nus_logo_full-horizontal.jpg" 1712419744 172263 381833ba130b5b7dd5894febec1f88f6 ""
   "graphics/Overall_Methodology.jpg" 1712547359 2032935 cf7d8cfd594ebfb60eb8aa03f96a2026 ""
   "graphics/Stock_Porfolio_Reit.jpg" 1712579455 137825 a0a11363583c48c5fcff47f93a7a6a21 ""
   "graphics/alpha_table.png" 1712651773 50054 de91cc9f766eb63810fbb2dec863270b ""
   "graphics/financial_statements.png" 1712637707 16149 28c41b89dc63f4d2af8958ece2dcf759 ""
-  "main.aux" 1712765323 13107 d84bb1927dfbf94c011a495991799d9d "pdflatex"
-  "main.bbl" 1712765321 5255 00d02fbb46704bf4752c8a9efbdf1f30 "bibtex main"
-  "main.tex" 1712765315 35867 d9a48a3ac358d7c0b150e1432f246e12 ""
-  "main.toc" 1712765323 5055 342e6ccf4c0ecf0c5f94960bd3ad15e1 "pdflatex"
+  "graphics/lit_review_reit_rmse.png" 1712769053 235461 24c2d5b1cd19f7c0fa2ebec3736adb5e ""
+  "main.aux" 1712775785 13511 efa8772059c2ee5961e3d2bbda437a90 "pdflatex"
+  "main.bbl" 1712775783 5255 00d02fbb46704bf4752c8a9efbdf1f30 "bibtex main"
+  "main.tex" 1712775780 37956 a553e6f3a05e8cb67ca8c4da14c3289f ""
+  "main.toc" 1712775785 5140 89c54cffe44bd4f7bdcae5208b811737 "pdflatex"
   "universe.jpg" 1597932321 28172 9d30f06d62324c2bb8ce6ebc912c5573 ""
   (generated)
   "main.aux"

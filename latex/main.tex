@@ -1,7 +1,6 @@
 \documentclass[a4paper,12pt]{report}
 \renewcommand\thechapter{\Roman{chapter}}
 \usepackage[utf8]{inputenc}
-\usepackage{lipsum}
 \usepackage{kantlipsum}
 \usepackage[calcwidth]{titlesec}
 \usepackage{fix-cm} 
@@ -15,10 +14,12 @@
 \usepackage{pgfplots}
 \usepackage{subcaption}
 \usepackage{lscape}
+\usepackage{afterpage}
 \usepackage{graphicx}
 \usepackage[raggedrightboxes]{ragged2e}
 \usepackage{changepage}
 \usepackage{makecell}
+\usepackage{colortbl}
 %\usepackage{biblatex}
 %\addbibresource{references.bib}
 %\bibliographystyle{apacite}
@@ -522,14 +523,19 @@ Macro-economic Analysis:
 \chapter{Literature Review of Portfolio Optimisation Techniques}
 \section{Optimal Portfolio Theory}
 
-
-
-
-
+\def\fillandplacepagenumber{%
+ \par\pagestyle{empty}%
+ \vbox to 0pt{\vss}\vfill
+ \vbox to 0pt{\baselineskip0pt
+   \hbox to\linewidth{\hss}%
+   \baselineskip\footskip
+   \hbox to\linewidth{%
+     \hfil\thepage\hfil}\vss}}
 
 \begin{landscape}
+  
+  \titlespacing{\section}{0pt}{-150pt}{0cm}% <-- spacing of title bar
   \section{Comparison of Traditional and Machine Learning Techniques}
-
   \begin{table}[H]
     \begin{adjustwidth}{-1.9cm}{-1.9cm}
     \begin{tabular}{|p{2.6cm}|p{2.7cm}|p{2.7cm}|p{3.5cm}|p{5cm}|p{5cm}|p{4cm}|}
@@ -538,28 +544,59 @@ Macro-economic Analysis:
     \\ \hline Autoregressive Integrated Moving Average (ARIMA) & Daily Price-Volume Data & Stock Price Prediction and Clustering & Stock Price Prediction & +Suitable for short-term time-series analysis \par+ Widely used in the field of finance for prediction \par+ More explanable than complex ML models & \par-Unsatisfactory for long term prediction \par-Higher RMSE than ML models   & \cite{ariyo_stock_2014},\par \cite{habbab_machine_2022},\par   \cite{obthong_survey_2020}         
     \\ \hline Generalised AutoRegressive Conditional Heteroskedasticity (GARCH) & Daily Commodities Price-Volume data & Stock Volatility Prediction & Stock Volatility Prediction & +Outperforms ARIMA for price prediction and volatility forcasting & - Model assumes volatility can be predicted based on past returns, but volatility in reality is very unpredicatable & \cite{fiszeder_what_2020},   \cite{lama_modelling_2015}, \cite{yuan_garch_2017}           
     \\ \hline Multiple Linear Regression (MLR) & Daily Price-Volume Data & Stock Price Prediction & Stock Price Prediction & +Relatively low RMSE error for stock price prediction \par+ Relatively easy to implement & - Only considers input features and not historical price data  & \cite{obthong_survey_2020}, \cite{shakhla_stock_2020}
-    \\ \hline Recurrent Neural Networks (RNN) & Daily Price-Volume Data & Stock Price Prediction & & +Relatively low RMSE error for stock price prediction\par + Remembers historical stock prices & - Susceptible to vanishing and exploding gradient problem & \cite{dey_comparative_2021} 
-    \\ \hline Long-Short Term Memory (LSTM) & Daily Price-Volume Data & Stock Price Prediction & Stock Price Prediction & + One of the lowest RMSE error for financial time series prediction \par+ Remembers historical stock prices which are good indicators of future prices \par+ Solves the vanishing and exploding gradient problem & - Mixed results when predicting REIT stock prices & \cite{axelsson_univariate_2023},   \cite{habbab_machine_2022}, \cite{obthong_survey_2020} 
-    \\ \hline Random Forest (RF) & Daily Price-Volume Data, Fundamental Data & Stock Price Prediction & & + One of the few papers to incorporate fundamental data into machines learning models & - Relatively low sharpe ratio compared to market indexes & \cite{cao_fundamental_2021},   \cite{huang_machine_2021}  
-    \\ \hline Genetic Algorithms & Daily Price-Volume Data & Stock Price Prediction and Clustering & & + Suitable for problems with a large search space \par+ Works well with large time-series data & \cite{obthong_survey_2020}
+    \\ \hline \rowcolor[gray]{.8}Recurrent Neural Networks (RNN) & Daily Price-Volume Data & Stock Price Prediction & & +Relatively low RMSE error for stock price prediction\par + Remembers historical stock prices & - Susceptible to vanishing and exploding gradient problem & \cite{dey_comparative_2021} 
     \\ \hline
     \end{tabular}
   \end{adjustwidth}
-    \end{table}
+  \end{table}
+  \section{Comparison of Traditional and Machine Learning Techniques (Continued)}
+  \begin{table}[H]
+    \begin{adjustwidth}{-1.9cm}{-1.9cm}
+    \begin{tabular}{|p{2.6cm}|p{2.7cm}|p{2.7cm}|p{3.5cm}|p{5cm}|p{5cm}|p{4cm}|}
+    \hline
+    \textbf{Methods} & \textbf{Data Inputs} & \textbf{Objectives} & \textbf{Scope for REITs} & \textbf{Strengths} & \textbf{Weaknesses} & \textbf{References}  
+    \\ \hline Long-Short Term Memory (LSTM) & Daily Price-Volume Data & Stock Price Prediction & Stock Price Prediction & + One of the lowest RMSE error for financial time series prediction \par+ Remembers historical stock prices which are good indicators of future prices \par+ Solves the vanishing and exploding gradient problem & - Mixed results when predicting REIT stock prices & \cite{axelsson_univariate_2023},   \cite{habbab_machine_2022}, \cite{obthong_survey_2020} 
+    \\ \hline Random Forest (RF) & Daily Price-Volume Data, Fundamental Data & Stock Price Prediction & & + One of the few papers to incorporate fundamental data into machines learning models & - Relatively low sharpe ratio compared to market indexes & \cite{cao_fundamental_2021},   \cite{huang_machine_2021}  
+    \\ \hline Genetic Algorithms & Daily Price-Volume Data & Stock Price Prediction and Clustering & & + Suitable for problems with a large search space \par+ Works well with large time-series data & & \cite{obthong_survey_2020}
+    \\ \hline
+    \end{tabular}
+  \end{adjustwidth}
+  \end{table}
+  %\fillandplacepagenumber
+
+
+
   
-
-
-
-
-  %\placetextbox{0.5}{0.5}{\fbox{\Huge\textsf{This is my text.}}}%\
-  %\placetextbox{0.1}{0.1}{\Large \rotatebox{180}{A}%
 \end{landscape}
 
 
 
-\subsection{Scope}
-\subsection{Profitability}
 \subsection{Predictive Accuracy}
+A recent paper aimed at predicting REIT share prices through 5 machine learning algorithms and 3 traditional benchmarks, which includes many of the methods in Section 3.2 above, found that machine learning models (MLR, LSTM) appear more accurate than traditional benchmarks (ARIMA). The algorithms were trained solely on daily price data, and Figure \ref{fig:lit_review_rmse} shows the RMSE results for out-of sample predictions over different time periods (30, 60, 90, 120 and 150 days).
+
+
+\begin{figure}[H]
+  \centerline{\includegraphics[width=5cm]{lit_review_reit_rmse}}
+  \caption{RMSE results for REITs using various ML Models (Source: \cite{habbab_-depth_2024})}
+  \label{fig:lit_review_rmse}
+\end{figure}
+
+
+\subsection{Gaps in Past Research to be Addressed}
+From the literature review in Section 3.3, it appears that there are the following gaps that can be further explored in this paper:
+\begin{enumerate}
+
+  \item {From the "Data Inputs" column, it appears most papers use price-volume (technical) data without fundamental data to make predictions.}
+  \item {From the "Objectives" column, most papers are focussed on predicting stock prices and rarely address portfolio allocation or optimisation (i.e. to use these predictions to inform buy/sell decision of each stock in a portfolio or to find the optimal weights of each stock in a portfolio to maximise the sharpe ratio).}
+  \item {There are no papers about searching for Alphas for REIT portfolios}
+  \item {Even though genetic algorithms have been used to predict stock prices, there appears to be an opportunity to apply it to the search of outperforming REIT Alphas.}
+  
+\end{enumerate}
+
+
+
+
+
 
 \titleformat{\chapter}[block]
   {\normalfont\huge\bfseries}{\thechapter.}{1em}{\Huge\centering}
@@ -577,16 +614,7 @@ Macro-economic Analysis:
 \pagenumbering{arabic}
 \chapter{Datasets}
 \section{Extended Fundamental Data Features}
-\section{Feature Selection with Decision Trees}
-
-\def\fillandplacepagenumber{%
- \par\pagestyle{empty}%
- \vbox to 0pt{\vss}\vfill
- \vbox to 0pt{\baselineskip0pt
-   \hbox to\linewidth{\hss}%
-   \baselineskip\footskip
-   \hbox to\linewidth{%
-     \hfil\thepage\hfil}\vss}}
+\section{Feature Exploration with Decision Trees}
 
 
 \chapter{Methodology}
