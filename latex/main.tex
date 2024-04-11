@@ -23,9 +23,28 @@
 %\usepackage{biblatex}
 %\addbibresource{references.bib}
 %\bibliographystyle{apacite}
-
+\usepackage{pgf-pie}
 \usepackage{lipsum}% For 'Lorem Ipsum' dummy text
 \usepackage[pscoord]{eso-pic}% The zero point of the coordinate systemis the lower left corner of the page (the default).
+\usepackage{xcolor}
+\definecolor{findOptimalPartition}{HTML}{D7191C}
+\definecolor{storeClusterComponent}{HTML}{FDAE61}
+\definecolor{dbscan}{HTML}{ABDDA4}
+\definecolor{constructCluster}{HTML}{2B83BA}
+\usepackage{listings, caption, graphicx, array, url}
+\lstset{frame=lines}
+
+
+\usepackage{tikz,forest}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{shapes}
+\usepackage{amsmath}
+\usepackage{xspace}
+\newcommand{\A}{\ensuremath{\mathcal{A}}\xspace}
+\newcommand{\B}{\ensuremath{\mathcal{B}}\xspace}
+\newcommand\pa[1]{\ensuremath{\left(#1\right)}}
+
+\usepackage[toc,page]{appendix}
 
 \newcommand{\placetextbox}[3]{% \placetextbox{<horizontal pos>}{<vertical pos>}{<stuff>}
   \setbox0=\hbox{#3}% Put <stuff> in a box
@@ -614,14 +633,121 @@ From the literature review in Section 3.3, it appears that there are the followi
 \pagenumbering{arabic}
 \chapter{Datasets}
 \section{Extended Fundamental Data Features}
+While many papers have obtained price-volume data from Yahoo Finance's API (yfinance), this data only contains 10 or so price-volume indicators listed in Appendix A. This paper goes further by obtaining a comprehensive list of 161 fundamental features from FinancialModelingPrep's (FMP) API\footnote{Although the datasource is proprietory and the author does not have permission to distribute the raw data, it can be easily purchased for a small fee at https://site.financialmodelingprep.com/.}, listed in Appendix B. 
+
+\tikzstyle{every node}=[font=\large]
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \pie[pos={0,0},radius=3,sum=auto,text=legend]{10/Technical, 161/Fundamental}
+    \end{tikzpicture}
+    \caption{Count of Fundamental vs Technical Features}
+    \label{fund_tec_pie}
+  \end{figure}
+
+  A script was written to combine the data from various api endpoints and backfill any missing values. Because price-volume data is available daily while fundamental data is generally available quarterly, a function is written to backfill the fundamental data such that daily numbers are available.
+
+
+
 \section{Feature Exploration with Decision Trees}
+Running a 25 layer Decision Tree on all 171 features reveals the strongest predictors for the next day's closing price. The top 4 layers are in Figure \ref{fig:decision_tree_features}:
+
+
+\begin{figure}[H]
+  \centerline{\includegraphics[width=16cm]{feature_decision_tree}}
+  \caption{Top 4 Layers of Decision Tree To Predict T+1 Close}
+  \label{fig:decision_tree_features}
+\end{figure}
+
+Figure \ref{fig:decision_tree_horizontal_graph} also shows the weights of the top 10 features in the Decision Tree. From both figures, it appears many of the balance sheet, income and cash flow statement features are indeed strong predictors of share price, coupled with technical features like Volume and Percentage Change in Share Price. 
+
+\begin{figure}[H]
+  \centerline{\includegraphics[width=10.5cm]{decision_tree_horizontal_graph}}
+  \caption{Top 10 Feature Weights from Decision Tree}
+  \label{fig:decision_tree_horizontal_graph}
+\end{figure}
+
+\section{Feature Selection}
+From the decision tree, it also appears that many of the top features can be encapsulated by other features. For example, Other Current Liabilities is a component of Total Current Liabilities, Expenses are part of Net Income and Cash Items are a part of Cash From Activities. Given that the tree was generated from only one stock ticker, to make the feature selection generalisable to all 150 tickers, the results are contextualised with financial knowledge to derive the final 22 Selected Features presented in Figure \ref{fig:selected_features}. The financial significance of each feature is explained in the column "Domain Importance".
+\begin{figure}[H]
+  \centerline{\includegraphics[width=20cm]{selected_features}}
+  \caption{22 Input Features Selected for Models}
+  \label{fig:selected_features}
+\end{figure}
+In the preprocessing step, up to 20 years of historical data with these 22 features are retrieved for 150 stock tickers, and appended to a dictionary which stores all the required data for each ticker.
+
+\iffalse
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}[x={(.01,0)}]
+  \foreach  \l/\x/\c[count=\y] in {Net Income Ratio/0.12/NetIncomeRatio, 
+  Graham Net Net/0.15/GrahamNetNet, 
+  Pb Ratio/0.20/PbRatio, 
+  Other Current Liabilities/0.33/OtherCurrentLiabilities}
+  {\node[left] at (0,\y) {\l};
+  %\fill[\c] (0,\y-.4) rectangle (\x,\y+.4);
+  \node[right] at (\x, \y) {\x};}
+  \draw (0,0) -- (0.5,0);
+  \foreach \x in {0.05, 0.10, ..., 0.6}
+  {\draw (\x,.2) -- (\x,0) node[below] {\x};}
+  \draw (0,0) -- (0,4.5);
+  \end{tikzpicture}
+\end{figure}
+
+
+
+
+
+% commented out latex tree, use photoshop instead
+\begin{tikzpicture}[
+  grow=down,
+  level 1/.style={sibling distance=3.5cm,level distance=2cm},
+  level 2/.style={sibling distance=3.5cm, level distance=2cm},
+  edge from parent/.style={very thick,draw=blue!40!black!60,
+      shorten >=5pt, shorten <=5pt},
+  edge from parent path={(\tikzparentnode.south) -- (\tikzchildnode.north)},
+  kant/.style={text width=2cm, text centered, sloped},
+  every node/.style={text ragged, inner sep=2mm},
+  punkt/.style={rectangle, rounded corners, shade, top color=white,
+  bottom color=blue!50!black!20, draw=blue!40!black!60, very
+  thick }
+  ]
+
+\node[punkt, text width=5.5em] {Country~\A}
+  %Lower part lv1
+  child {
+      node[punkt, text width=6em] {Country~\A}
+      edge from parent
+          node[kant, below, pos=.6] {Unchanged parity}
+  }
+  %Upper part, lv1
+  child {
+      node[punkt, text width=6em] {Country~\A}
+      %child 1
+      child {
+          node[punkt, text width=6em] {Country~\A}
+          edge from parent
+              node[below, kant,  pos=.6] {Unchanged parity}
+      }
+      %child 2
+      child {
+          node[punkt, text width=6em] {Country~\A}
+          edge from parent
+              node[kant, above] {Devalues}}
+          edge from parent{
+              node[kant, above] {Devalues}}
+  };
+\end{tikzpicture}
+\fi
 
 
 \chapter{Methodology}
-
+This paper takes two approaches to portfolio optimisation. 1) Optimisation with Machine Learning and 2) Alpha Tree Search using Genetic Algorithms.
 \begin{figure}[H]
-\centerline{\includegraphics[width=21cm]{Overall_Methodology}}
-\caption{Write some caption here}\label{visina8}
+\centerline{\includegraphics[width=20cm]{Overall_Methodology}}
+\caption{Overall Workflow For This Paper}\label{visina8}
+\label{fig:Overall Workflow For This Paper}
 \end{figure}
 
 
@@ -630,8 +756,33 @@ From the literature review in Section 3.3, it appears that there are the followi
 %\end{landscape}
 
 \section{Machine Learning for REITs Portfolio Optimisation}
+With reference to Figure \ref{fig:Overall Workflow For This Paper}, the first approach of machine learning for optimisation consists of two parts, A) Price Prediction and B) Trade Execution.
+
+
 \subsection{MLR / NN / LSTM Predictions with Extended Features}
+At the pre-processing stage of all three models, data for each ticker is split into the training and test sets with a 80:20 ratio. The close price for each row is also shifted one day forward so that all 21 features can work on predicting the next day's close.  
+
+
+All 22 Features are fed as inputs the MLR, NN and LSTM models.
+\begin{lstlisting}[language=Python, caption=Multiple Linear Regression Pseudocode]
+  from scipy import optimize
+  import numpy as np
+  
+  def Linear(a, b, C):
+      num_row, num_col = C.shape
+      top = np.kron(np.identity(num_row), np.ones(num_col))
+      bot = np.kron(np.ones(num_row), np.identity(num_col))
+  
+      result = optimize.linprog(
+          c = C.ravel(),
+          A_eq = np.concatenate((top, bot[:-1]), axis = 0),
+          b_eq = np.concatenate((a, b[:-1])))
+  
+      return result.x.reshape((num_row, num_col))
+  \end{lstlisting}
+
 \subsection{Trade Execution Logic}
+The latter extends past research by implementing the trading logic that decides how to act on predicted prices in order to optimise portfolios. 
 \subsection{Performance Evaluation}
 \section{Genetic Algorithm Search for Outperforming Alphas}
 \subsection{Alpha Tree}

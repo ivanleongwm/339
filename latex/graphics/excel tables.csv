@@ -1,11 +1,13 @@
-,,,,,,,,,,,,,,
-,,Features,,,Alpha,Ranking Alpha Values to Determine Allocation,,,,,,Allocation (20Mil),DoD Price Change % ,Profit/Loss
-Date,Ticker,High,Low,Vwap,Alpha Value,Rank,Rank out of 1,Centered 0,Abs,Sum Rank,Normalised,,,
-10/09/2024,SPG,5,4,4.5,-0.028,3,0.4,-0.1,0.1,1.8,-0.06,-1.11,-0.01,0.01
-10/09/2024,PSA,8,3,5,-0.101,2,0.2,-0.3,0.3,1.8,-0.17,-3.33,-0.02,0.07
-10/09/2024,PLD,10,2,3,1.472,6,1.0,0.5,0.5,1.8,0.28,5.56,0.04,0.22
-10/09/2024,DLR,4,3,3,0.464,5,0.8,0.3,0.3,1.8,0.06,1.11,-0.02,-0.02
-10/09/2024,AMT,6,6,6,0.000,4,0.6,0.1,0.1,1.8,0.17,3.33,0.01,0.03
-10/09/2024,EQR,5,1,3,-0.764,1,0.0,-0.5,0.5,1.8,-0.28,-5.56,0.02,-0.11
-,,,,,,,,,,,,Total PnL for the Day,,0.20
-,,,,,,,,,,,,,,
+,,,,,
+Feature ,Source ,Domain Importance ,Feature ,Source ,Domain Importance 
+open ,Price Volume Data ,Initial market sentiment and potential direction,Total Equity ,Balance Sheet ,Shareholders' stake in the company
+high ,Price Volume Data ,Maximum bullish sentiment and potential resistance levels ,Net Cash Provided By Operating Activities ,Cash Flow Statement ,Cash generated from core business activities
+low ,Price Volume Data ,Extent of bearish sentiment and potential support levels,Net Cash Used For Investing Activites ,Cash Flow Statement ,Company's Investment in long-term growth
+close ,Price Volume Data ,Final consensus value of the stock for the day,Net Cash Used Provided By Financing Activities ,Cash Flow Statement ,Financing activities' impact on cash flow
+volume ,Price Volume Data ,Level of activity in a stock. Signals the strength of a price movement,Net Change In Cash ,Financial Analysis Ratios ,Overall cash flow health and liquidity
+Volume Weighted Average Price (VWAP) ,Price Volume Data ,Average price paid per share within a trading period,Capital Expenditure ,Financial Analysis Ratios ,Investment in the company's future growth
+Net Income ,Income Statement ,"Company's Profitability, affecting investor perception ",Cash Per Share ,Financial Analysis Ratios ,Company's liquidity
+Total Assets ,Balance Sheet ,Size of the company and its resource base,Current Ratio ,Financial Analysis Ratios ,Ability to pay off its short-term liabilities with short-term assets
+Total Current Assets ,Balance Sheet ,Short-term financial health and liquidity. ,Return On Tangible Assets ,Financial Analysis Ratios ,Effectiveness of using physical assets to generate profits
+Total Debt ,Balance Sheet ,Signal financial risk,Earnings Yield ,Financial Analysis Ratios ,Earnings per share over the share price
+Total Current Liabilities ,Balance Sheet ,Short-term obligations and ability to meet them,,,

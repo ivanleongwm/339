@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.6)  11 APR 2024 03:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.6)  11 APR 2024 18:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -481,30 +481,248 @@ Package: colortbl 2024/02/20 v1.0g Color table columns (DPC)
 \everycr=\toks46
 \minrowclearance=\skip77
 \rownum=\count321
-) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/pgf-pie\pgf-pie.sty
+Package: pgf-pie 2022/06/14 v0.7 Some LaTeX macros for pie chart by using PGF/Tikz package.
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/pgf-pie\tikzlibrarypie.code.tex (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\scalefnt.sty)
+\pgfpie@angleEnd=\dimen298
+\pgfpie@explodeLength=\count322
+\pgfpie@colorLength=\count323
+\pgfpie@sliceLength=\count324
+)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.sty (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/l3keys2e\l3keys2e.sty (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.sty
 Package: expl3 2024-03-14 L3 programming layer (loader) 
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-03-14 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count322
+\l__color_backend_stack_int=\count325
 \l__pdf_internal_box=\box78
 ))
 Package: l3keys2e 2024-03-14 LaTeX2e option processing using LaTeX3 keys
 )
 Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
-\g__lipsum_par_int=\count323
-\l__lipsum_a_int=\count324
-\l__lipsum_b_int=\count325
+\g__lipsum_par_int=\count326
+\l__lipsum_a_int=\count327
+\l__lipsum_b_int=\count328
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/lipsum\lipsum.ltd.tex)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2023/05/03 v3.0c eso-pic (RN)
-\ESO@tempdima=\dimen298
-\ESO@tempdimb=\dimen299
+\ESO@tempdima=\dimen299
+\ESO@tempdimb=\dimen300
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+\lst@mode=\count329
+\lst@gtempboxa=\box79
+\lst@token=\toks47
+\lst@length=\count330
+\lst@currlwidth=\dimen301
+\lst@column=\count331
+\lst@pos=\count332
+\lst@lostspace=\dimen302
+\lst@width=\dimen303
+\lst@newlines=\count333
+\lst@lineno=\count334
+\lst@maxwidth=\dimen304
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpatch.sty
+File: lstpatch.sty 2024/03/11 1.10a (Carsten Heinz)
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+File: lstmisc.sty 2024/03/11 1.10a (Carsten Heinz)
+\c@lstnumber=\count335
+\lst@skipnumbers=\count336
+\lst@framebox=\box80
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+File: listings.cfg 2024/03/11 1.10a listings configuration
+))
+Package: listings 2024/03/11 1.10a (Carsten Heinz)
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/forest\forest.sty
+Package: forest 2017/07/14 v2.1.5 Drawing (linguistic) trees
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.callouts.code.tex (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.callouts.code.tex)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/shapes\pgflibraryshapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfnodepartlowerbox=\box81
+\pgfnodeparttwobox=\box82
+\pgfnodepartthreebox=\box83
+\pgfnodepartfourbox=\box84
+\pgfnodeparttwentybox=\box85
+\pgfnodepartnineteenbox=\box86
+\pgfnodeparteighteenbox=\box87
+\pgfnodepartseventeenbox=\box88
+\pgfnodepartsixteenbox=\box89
+\pgfnodepartfifteenbox=\box90
+\pgfnodepartfourteenbox=\box91
+\pgfnodepartthirteenbox=\box92
+\pgfnodeparttwelvebox=\box93
+\pgfnodepartelevenbox=\box94
+\pgfnodeparttenbox=\box95
+\pgfnodepartninebox=\box96
+\pgfnodeparteightbox=\box97
+\pgfnodepartsevenbox=\box98
+\pgfnodepartsixbox=\box99
+\pgfnodepartfivebox=\box100
+))) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryfit.code.tex
+File: tikzlibraryfit.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryintersections.code.tex
+\pgf@intersect@solutions=\count337
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/pgfopts\pgfopts.sty
+Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
+\pgfopts@list@add@a@toks=\toks48
+\pgfopts@list@add@b@toks=\toks49
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/elocalloc\elocalloc.sty
+Package: elocalloc 2016/12/15 v0.03 local allocation for LaTeX 2015+ (DPC)
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/environ\environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/trimspaces\trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+)
+\@envbody=\toks50
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2024-03-14 L3 Experimental document command parser
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/inlinedef\inlinedef.sty
+Package: inlinedef 2008/07/10 v1.0 Inlined expansions within definitions
+\ID@toks=\toks51
+\ID@count=\count338
+)
+\ID@usercommands=\toks52
+\safeloop@depth=\count339
+\safeRKloop@depth=\count340
+\forest@temp@dimen=\dimen305
+\forest@temp@count=\count341
+\forest@n=\count342
+\forest@temp@global@count=\count343
+\forest@temp@toks=\toks53
+\forest@temparray@M=\count344
+\forest@temparray@N=\count345
+\forest@global@temparray@M=\count346
+\forest@global@temparray@N=\count347
+\forest@isnum@count=\count348
+\forest@isdim@nonintpart=\count349
+\forest@isdim@dimen=\dimen306
+\forest@sort@m=\count350
+\forest@sort@k=\count351
+\forest@sort@p=\count352
+\bracket@content=\toks54
+\bracket@afterthought=\toks55
+\forest@node@maxid=\count353
+\forest@process@left@M=\count354
+\forest@process@left@N=\count355
+\forest@process@right@M=\count356
+\forest@process@right@N=\count357
+\forest@process@saved@M=\count358
+\forest@process@saved@N=\count359
+\forest@process@result@M=\count360
+\forest@process@result@N=\count361
+\forest@process@n=\count362
+\forest@nodewalk@branch@toks=\toks56
+\forest@nodewalk@shortsteps@resolution=\toks57
+\forest@do@dynamics=\toks58
+\forest@box=\box101
+\forest@xg=\dimen307
+\forest@yg=\dimen308
+\forest@xs=\dimen309
+\forest@ys=\dimen310
+\forest@pi@toks=\toks59
+\forest@segment@toks=\toks60
+\forest@PIi@toks=\toks61
+\forest@PIii@toks=\toks62
+\forest@copy@in=\read3
+\forest@copy@out=\write4
+\forest@externalize@max@outer@n=\count363
+\forest@externalize@inner@n=\count364
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryarrows.meta.code.tex
+File: pgflibraryarrows.meta.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\pgfarrowinset=\dimen311
+\pgfarrowlength=\dimen312
+\pgfarrowwidth=\dimen313
+\pgfarrowlinewidth=\dimen314
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip78
+
+For additional information on amsmath, use the `?' option.
+(C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen315
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count365
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count366
+\leftroot@=\count367
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count368
+\DOTSCASE@=\count369
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box102
+\strutbox@=\box103
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen316
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count370
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count371
+\dotsspace@=\muskip17
+\c@parentequation=\count372
+\dspbrk@lvl=\count373
+\tag@help=\toks63
+\row@=\count374
+\column@=\count375
+\maxfields@=\count376
+\andhelp@=\toks64
+\eqnshift@=\dimen317
+\alignsep@=\dimen318
+\tagshift@=\dimen319
+\tagwidth@=\dimen320
+\totwidth@=\dimen321
+\lineht@=\dimen322
+\@envbody=\toks65
+\multlinegap=\skip79
+\multlinetaggap=\skip80
+\mathdisplay@stack=\toks66
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/appendix\appendix.sty
+Package: appendix 2020/02/08 v1.2c extra appendix facilities
+\c@@pps=\count377
+\c@@ppsavesec=\count378
+\c@@ppsaveapp=\count379
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarypatterns.code.tex
 File: tikzlibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibrarypatterns.code.tex
 File: pgflibrarypatterns.code.tex 2023-01-15 v3.1.10 (3.1.10)
-)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.fillbetween.code.tex (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib\tikzlibraryfillbetween.code.tex (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryintersections.code.tex (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryintersections.code.tex
-\pgf@intersect@solutions=\count326
-)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib\tikzlibrarydecorations.softclip.code.tex (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib\pgflibraryfillbetween.code.tex))) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.decorations.softclip.code.tex))
+)) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.fillbetween.code.tex (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib\tikzlibraryfillbetween.code.tex (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryintersections.code.tex) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib\tikzlibrarydecorations.softclip.code.tex (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/pgfcontrib\pgflibraryfillbetween.code.tex))) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.decorations.softclip.code.tex))
 
 Package siunitx Info: Option "group-digits = false" has been deprecated in
 (siunitx)             this release.
@@ -513,73 +731,15 @@ Package siunitx Info: Option "group-digits = false" has been deprecated in
 
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amscls\amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks47
-\thm@bodyfont=\toks48
-\thm@headfont=\toks49
-\thm@notefont=\toks50
-\thm@headpunct=\toks51
-\thm@preskip=\skip78
-\thm@postskip=\skip79
-\thm@headsep=\skip80
-\dth@everypar=\toks52
-) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip81
-
-For additional information on amsmath, use the `?' option.
-(C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen300
-) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
-Package: amsopn 2022/04/08 v2.04 operator names
-)
-\inf@bad=\count327
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count328
-\leftroot@=\count329
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count330
-\DOTSCASE@=\count331
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box79
-\strutbox@=\box80
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen301
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count332
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count333
-\dotsspace@=\muskip16
-\c@parentequation=\count334
-\dspbrk@lvl=\count335
-\tag@help=\toks53
-\row@=\count336
-\column@=\count337
-\maxfields@=\count338
-\andhelp@=\toks54
-\eqnshift@=\dimen302
-\alignsep@=\dimen303
-\tagshift@=\dimen304
-\tagwidth@=\dimen305
-\totwidth@=\dimen306
-\lineht@=\dimen307
-\@envbody=\toks55
-\multlinegap=\skip82
-\multlinetaggap=\skip83
-\mathdisplay@stack=\toks56
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
+\thm@style=\toks67
+\thm@bodyfont=\toks68
+\thm@headfont=\toks69
+\thm@notefont=\toks70
+\thm@headpunct=\toks71
+\thm@preskip=\skip81
+\thm@postskip=\skip82
+\thm@headsep=\skip83
+\dth@everypar=\toks72
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
@@ -593,36 +753,36 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: mathtools 2024/03/11 v1.30 mathematical typesetting tools
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2023/07/08 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count339
-\calc@Bcount=\count340
-\calc@Adimen=\dimen308
-\calc@Bdimen=\dimen309
+\calc@Acount=\count380
+\calc@Bcount=\count381
+\calc@Adimen=\dimen323
+\calc@Bdimen=\dimen324
 \calc@Askip=\skip84
 \calc@Bskip=\skip85
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count341
+\calc@Ccount=\count382
 \calc@Cskip=\skip86
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhsetup.sty
 Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
 )
-\g_MT_multlinerow_int=\count342
-\l_MT_multwidth_dim=\dimen310
+\g_MT_multlinerow_int=\count383
+\l_MT_multwidth_dim=\dimen325
 \origjot=\skip87
-\l_MT_shortvdotswithinadjustabove_dim=\dimen311
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen312
-\l_MT_above_intertext_sep=\dimen313
-\l_MT_below_intertext_sep=\dimen314
-\l_MT_above_shortintertext_sep=\dimen315
-\l_MT_below_shortintertext_sep=\dimen316
-\xmathstrut@box=\box81
-\xmathstrut@dim=\dimen317
+\l_MT_shortvdotswithinadjustabove_dim=\dimen326
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen327
+\l_MT_above_intertext_sep=\dimen328
+\l_MT_below_intertext_sep=\dimen329
+\l_MT_above_shortintertext_sep=\dimen330
+\l_MT_below_shortintertext_sep=\dimen331
+\xmathstrut@box=\box104
+\xmathstrut@dim=\dimen332
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/jknappen\mathbbol.sty
 Package: mathbbol 1995/01/01
 \symbbold=\mathgroup6
 )
-\c@thm=\count343
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 68.
+\c@thm=\count384
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 87.
  (main.aux
 
 LaTeX Warning: Label `visina8' multiply defined.
@@ -630,33 +790,33 @@ LaTeX Warning: Label `visina8' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
  (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count344
-\scratchdimen=\dimen318
-\scratchbox=\box82
-\nofMPsegments=\count345
-\nofMParguments=\count346
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count347
-\MPscratchDim=\dimen319
-\MPnumerator=\count348
-\makeMPintoPDFobject=\count349
-\everyMPtoPDFconversion=\toks58
+\scratchcounter=\count385
+\scratchdimen=\dimen333
+\scratchbox=\box105
+\nofMPsegments=\count386
+\nofMParguments=\count387
+\everyMPshowfont=\toks73
+\MPscratchCnt=\count388
+\MPscratchDim=\dimen334
+\MPnumerator=\count389
+\makeMPintoPDFobject=\count390
+\everyMPtoPDFconversion=\toks74
 ) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -665,19 +825,21 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 )) (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 68.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 87.
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen320
-\caption@adjustwidth@linewidth=\dimen321
+\caption@adjustwidth@hsize=\dimen335
+\caption@adjustwidth@linewidth=\dimen336
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count391
 <graphics/1.nus_logo_full-horizontal.jpg, id=4, 334.851pt x 207.6558pt>
 File: graphics/1.nus_logo_full-horizontal.jpg Graphic file (type jpg)
 <use graphics/1.nus_logo_full-horizontal.jpg>
-Package pdftex.def Info: graphics/1.nus_logo_full-horizontal.jpg  used on input line 75.
+Package pdftex.def Info: graphics/1.nus_logo_full-horizontal.jpg  used on input line 94.
 (pdftex.def)             Requested size: 284.52756pt x 176.45122pt.
 [1
 
@@ -702,35 +864,35 @@ File: ubbold.fd 1996/01/01 Blackboard Bold Font Definition File (jk)
 ) [5
 
 ] [6])
-\tf@toc=\write4
-\openout4 = `main.toc'.
+\tf@toc=\write5
+\openout5 = `main.toc'.
 
  [1]
 Chapter 1.
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 139--140
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 127--128
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
+Underfull \hbox (badness 10000) in paragraph at lines 148--149
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
 
  []
 
@@ -743,87 +905,87 @@ Chapter 2.
 <graphics/Stock_Porfolio_Reit.jpg, id=44, 896.34875pt x 908.39375pt>
 File: graphics/Stock_Porfolio_Reit.jpg Graphic file (type jpg)
 <use graphics/Stock_Porfolio_Reit.jpg>
-Package pdftex.def Info: graphics/Stock_Porfolio_Reit.jpg  used on input line 155.
+Package pdftex.def Info: graphics/Stock_Porfolio_Reit.jpg  used on input line 174.
 (pdftex.def)             Requested size: 256.0748pt x 259.50479pt.
 [2
 
  <./graphics/Stock_Porfolio_Reit.jpg>] [3] [4]
-Overfull \hbox (2.41652pt too wide) detected at line 243
+Overfull \hbox (2.41652pt too wide) detected at line 262
 $\OT1/cmr/m/n/12 125$
  []
 
 
-Overfull \hbox (2.41652pt too wide) detected at line 243
+Overfull \hbox (2.41652pt too wide) detected at line 262
 $\OT1/cmr/m/n/12 125$
  []
 
 
-Overfull \hbox (2.41652pt too wide) detected at line 243
+Overfull \hbox (2.41652pt too wide) detected at line 262
 $\OT1/cmr/m/n/12 123$
  []
 
 
-Overfull \hbox (2.41652pt too wide) detected at line 243
+Overfull \hbox (2.41652pt too wide) detected at line 262
 $\OT1/cmr/m/n/12 124$
  []
 
 
-Overfull \hbox (25.91628pt too wide) detected at line 244
+Overfull \hbox (25.91628pt too wide) detected at line 263
 $\OT1/cmr/m/n/12 3277600$
  []
 
 
-Overfull \hbox (2.41652pt too wide) detected at line 244
+Overfull \hbox (2.41652pt too wide) detected at line 263
 $\OT1/cmr/m/n/12 125$
  []
 
 
-Overfull \hbox (2.41652pt too wide) detected at line 244
+Overfull \hbox (2.41652pt too wide) detected at line 263
 $\OT1/cmr/m/n/12 125$
  []
 
 
-Overfull \hbox (2.41652pt too wide) detected at line 244
+Overfull \hbox (2.41652pt too wide) detected at line 263
 $\OT1/cmr/m/n/12 124$
  []
 
 
-Overfull \hbox (2.41652pt too wide) detected at line 244
+Overfull \hbox (2.41652pt too wide) detected at line 263
 $\OT1/cmr/m/n/12 124$
  []
 
 
-Overfull \hbox (25.91628pt too wide) detected at line 245
+Overfull \hbox (25.91628pt too wide) detected at line 264
 $\OT1/cmr/m/n/12 1591000$
  []
 
 
-Overfull \hbox (2.41652pt too wide) detected at line 245
+Overfull \hbox (2.41652pt too wide) detected at line 264
 $\OT1/cmr/m/n/12 125$
  []
 
 
-Overfull \hbox (2.41652pt too wide) detected at line 245
+Overfull \hbox (2.41652pt too wide) detected at line 264
 $\OT1/cmr/m/n/12 125$
  []
 
 
-Overfull \hbox (2.41652pt too wide) detected at line 245
+Overfull \hbox (2.41652pt too wide) detected at line 264
 $\OT1/cmr/m/n/12 123$
  []
 
 
-Overfull \hbox (2.41652pt too wide) detected at line 245
+Overfull \hbox (2.41652pt too wide) detected at line 264
 $\OT1/cmr/m/n/12 122$
  []
 
 
-Overfull \hbox (25.91628pt too wide) detected at line 246
+Overfull \hbox (25.91628pt too wide) detected at line 265
 $\OT1/cmr/m/n/12 2854100$
  []
 
 
-Overfull \hbox (26.73302pt too wide) in paragraph at lines 239--249
+Overfull \hbox (26.73302pt too wide) in paragraph at lines 258--268
  [][] 
  []
 
@@ -835,72 +997,72 @@ PGFPlots: reading {2.pnlDay1.dat}
 PGFPlots: reading {2.pnlDay3.dat}
 PGFPlots: reading {2.pnlDay3.dat}
 
-Underfull \hbox (badness 10000) in paragraph at lines 317--318
+Underfull \hbox (badness 10000) in paragraph at lines 336--337
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 326--444
+Underfull \hbox (badness 10000) in paragraph at lines 345--463
 
  []
 
 [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 458--460
+Underfull \hbox (badness 10000) in paragraph at lines 477--479
 
  []
 
 
-Overfull \hbox (0.29445pt too wide) in paragraph at lines 462--462
+Overfull \hbox (0.29445pt too wide) in paragraph at lines 481--481
 |[]\OT1/cmr/bx/n/14.4 Fundamental Anal-y-sis with Fi-nan-cial State-ments| 
  []
 
 <graphics/financial_statements.png, id=72, 784.43062pt x 156.585pt>
 File: graphics/financial_statements.png Graphic file (type png)
 <use graphics/financial_statements.png>
-Package pdftex.def Info: graphics/financial_statements.png  used on input line 465.
+Package pdftex.def Info: graphics/financial_statements.png  used on input line 484.
 (pdftex.def)             Requested size: 483.69684pt x 96.55605pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 469--470
+Underfull \hbox (badness 10000) in paragraph at lines 488--489
 
  []
 
 [8 <./graphics/financial_statements.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 481--482
+Underfull \hbox (badness 10000) in paragraph at lines 500--501
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 483--484
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 485--486
+Underfull \hbox (badness 10000) in paragraph at lines 504--505
 
  []
 
 
-Overfull \hbox (18.5003pt too wide) in paragraph at lines 487--490
+Overfull \hbox (18.5003pt too wide) in paragraph at lines 506--509
 []\OT1/cmr/m/n/12 Alpha 2: $((0\OML/cmm/m/it/12 :\OT1/cmr/m/n/12 25 \OML/cmm/m/it/12 < \OT1/cmr/m/n/12 (((\OML/cmm/m/it/12 delay\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 close; \OT1/cmr/m/n/12 20) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 delay\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 close; \OT1/cmr/m/n/12 10))\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 10) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 delay\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 close; \OT1/cmr/m/n/12 10) \OMS/cmsy/m/n/12 ^^@
  []
 
 
-Overfull \hbox (47.5377pt too wide) in paragraph at lines 487--490
+Overfull \hbox (47.5377pt too wide) in paragraph at lines 506--509
 \OML/cmm/m/it/12 close\OT1/cmr/m/n/12 )\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 10)))?(\OMS/cmsy/m/n/12 ^^@\OT1/cmr/m/n/12 1 \OMS/cmsy/m/n/12 ^^C \OT1/cmr/m/n/12 1) : (((((\OML/cmm/m/it/12 delay\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 close; \OT1/cmr/m/n/12 20) \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 delay\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 close; \OT1/cmr/m/n/12 10))\OML/cmm/m/it/12 =\OT1/cmr/m/n/12 10) \OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 delay\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 close; \OT1/cmr/m/n/12 10) \OMS/cmsy/m/n/12 ^^@
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 487--490
+Underfull \hbox (badness 10000) in paragraph at lines 506--509
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--492
+Underfull \hbox (badness 10000) in paragraph at lines 510--511
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 493--494
+Underfull \hbox (badness 10000) in paragraph at lines 512--513
 
  []
 
@@ -908,20 +1070,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 493--494
 <graphics/alpha_table.png, id=82, 1133.73563pt x 239.39438pt>
 File: graphics/alpha_table.png Graphic file (type png)
 <use graphics/alpha_table.png>
-Package pdftex.def Info: graphics/alpha_table.png  used on input line 496.
+Package pdftex.def Info: graphics/alpha_table.png  used on input line 515.
 (pdftex.def)             Requested size: 569.05511pt x 120.1608pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 501--502
+Underfull \hbox (badness 10000) in paragraph at lines 520--521
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 513--514
+Underfull \hbox (badness 10000) in paragraph at lines 532--533
 
  []
 
 [10 <./graphics/alpha_table.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 518--519
+Underfull \hbox (badness 10000) in paragraph at lines 537--538
 
  []
 
@@ -930,12 +1092,12 @@ Chapter 3.
 [12
 
 ]
-Overfull \hbox (0.89134pt too wide) in paragraph at lines 544--544
+Overfull \hbox (0.89134pt too wide) in paragraph at lines 563--563
 []|\OT1/cmr/m/n/12 Autoregressive 
  []
 
 
-Overfull \hbox (112.62506pt too wide) in paragraph at lines 541--550
+Overfull \hbox (112.62506pt too wide) in paragraph at lines 560--569
 [][]  
  []
 
@@ -945,12 +1107,12 @@ Overfull \hbox (112.62506pt too wide) in paragraph at lines 541--550
 Overfull \vbox (88.55078pt too high) has occurred while \output is active []
 
  [14]
-Overfull \hbox (13.37558pt too wide) in paragraph at lines 552--552
+Overfull \hbox (13.37558pt too wide) in paragraph at lines 571--571
 |[]\OT1/cmr/bx/n/17.28 Comparison of Tra-di-tional and Ma-chine Learn-ing Tech-niques (Con-
  []
 
 
-Overfull \hbox (112.62506pt too wide) in paragraph at lines 555--563
+Overfull \hbox (112.62506pt too wide) in paragraph at lines 574--582
 [][]  
  []
 
@@ -961,7 +1123,7 @@ Overfull \vbox (3.65065pt too high) has occurred while \output is active []
 <graphics/lit_review_reit_rmse.png, id=103, 124.7862pt x 130.086pt>
 File: graphics/lit_review_reit_rmse.png Graphic file (type png)
 <use graphics/lit_review_reit_rmse.png>
-Package pdftex.def Info: graphics/lit_review_reit_rmse.png  used on input line 579.
+Package pdftex.def Info: graphics/lit_review_reit_rmse.png  used on input line 598.
 (pdftex.def)             Requested size: 142.26378pt x 148.30948pt.
  [16
 
@@ -971,33 +1133,66 @@ Chapter II.
 
 ]
 Chapter 4.
+<graphics/feature_decision_tree.png, id=113, 560.3334pt x 224.7597pt>
+File: graphics/feature_decision_tree.png Graphic file (type png)
+<use graphics/feature_decision_tree.png>
+Package pdftex.def Info: graphics/feature_decision_tree.png  used on input line 657.
+(pdftex.def)             Requested size: 455.24408pt x 182.60994pt.
 [2
 
 ]
+<graphics/decision_tree_horizontal_graph.png, id=118, 906.38625pt x 489.32813pt>
+File: graphics/decision_tree_horizontal_graph.png Graphic file (type png)
+<use graphics/decision_tree_horizontal_graph.png>
+Package pdftex.def Info: graphics/decision_tree_horizontal_graph.png  used on input line 665.
+(pdftex.def)             Requested size: 298.75394pt x 161.28464pt.
+<graphics/selected_features.png, id=119, 1141.26375pt x 556.32843pt>
+File: graphics/selected_features.png Graphic file (type png)
+<use graphics/selected_features.png>
+Package pdftex.def Info: graphics/selected_features.png  used on input line 673.
+(pdftex.def)             Requested size: 569.05511pt x 277.39104pt.
+ [3 <./graphics/feature_decision_tree.png (PNG copy)> <./graphics/decision_tree_horizontal_graph.png>] [4 <./graphics/selected_features.png>]
 Chapter 5.
-<graphics/Overall_Methodology.jpg, id=116, 4442.5975pt x 3608.48125pt>
+<graphics/Overall_Methodology.jpg, id=129, 4442.5975pt x 3608.48125pt>
 File: graphics/Overall_Methodology.jpg Graphic file (type jpg)
 <use graphics/Overall_Methodology.jpg>
-Package pdftex.def Info: graphics/Overall_Methodology.jpg  used on input line 623.
-(pdftex.def)             Requested size: 597.50787pt x 485.30695pt.
+Package pdftex.def Info: graphics/Overall_Methodology.jpg  used on input line 748.
+(pdftex.def)             Requested size: 569.05511pt x 462.18137pt.
 
-Overfull \hbox (7.70778pt too wide) in paragraph at lines 632--632
+Overfull \hbox (7.70778pt too wide) in paragraph at lines 758--758
 |[]\OT1/cmr/bx/n/17.28 Machine Learn-ing for RE-ITs Port-fo-lio Op-
  []
 
+[5
 
-Overfull \hbox (11.34973pt too wide) in paragraph at lines 636--636
+ <./graphics/Overall_Methodology.jpg>] (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+File: lstlang1.sty 2024/03/11 1.10a listings language file
+)
+Overfull \hbox (25.94928pt too wide) in paragraph at lines 773--774
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (25.94928pt too wide) in paragraph at lines 774--776
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (25.94928pt too wide) in paragraph at lines 778--779
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[6]
+Overfull \hbox (11.34973pt too wide) in paragraph at lines 787--787
 |[]\OT1/cmr/bx/n/17.28 Genetic Al-go-rithm Search for Out-per-form-
  []
 
 
-Overfull \hbox (4.82959pt too wide) in paragraph at lines 638--638
+Overfull \hbox (4.82959pt too wide) in paragraph at lines 789--789
 |[]\OT1/cmr/bx/n/14.4 Application of Ge-netic Al-go-rithms to Al-pha Trees| 
  []
 
-[3
-
- <./graphics/Overall_Methodology.jpg>] [4]
+[7]
 Chapter III.
 [1
 
@@ -1012,7 +1207,7 @@ Chapter 7.
 ]
 Chapter 8.
 
-Overfull \hbox (11.54387pt too wide) in paragraph at lines 675--675
+Overfull \hbox (11.54387pt too wide) in paragraph at lines 826--826
 |[]\OT1/cmr/bx/n/17.28 Portfolio Al-lo-ca-tion Re-sults with Best Per-
  []
 
@@ -1020,10 +1215,10 @@ Overfull \hbox (11.54387pt too wide) in paragraph at lines 675--675
 
 ]
 Chapter 9.
-<universe.jpg, id=136, 102.3825pt x 73.9563pt>
+<universe.jpg, id=152, 102.3825pt x 73.9563pt>
 File: universe.jpg Graphic file (type jpg)
 <use universe.jpg>
-Package pdftex.def Info: universe.jpg  used on input line 689.
+Package pdftex.def Info: universe.jpg  used on input line 840.
 (pdftex.def)             Requested size: 174.0495pt x 125.72514pt.
 (main.bbl [5
 
@@ -1045,17 +1240,17 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 33817 strings out of 474423
- 877948 string characters out of 5743135
- 1953496 words of memory out of 5000000
- 55610 multiletter control sequences out of 15000+600000
+ 45812 strings out of 474423
+ 1200956 string characters out of 5743135
+ 2089694 words of memory out of 5000000
+ 67492 multiletter control sequences out of 15000+600000
  568968 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 114i,21n,121p,1458b,2515s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi657\tcrm1000.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold12.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on main.pdf (39 pages, 2875453 bytes).
+ 114i,21n,121p,1645b,2519s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi657\tcrm1000.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold12.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on main.pdf (42 pages, 3140743 bytes).
 PDF statistics:
- 208 PDF objects out of 1000 (max. 8388607)
+ 228 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 63 words of extra memory for PDF output out of 10000 (max. 10000000)
 
