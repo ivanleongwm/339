@@ -506,6 +506,8 @@ INPUT .\graphics\Overall_Methodology.jpg
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
+INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmtt10.tfm
+INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmitt10.tfm
 INPUT .\universe.jpg
 INPUT .\universe.jpg
 INPUT .\universe.jpg
@@ -527,6 +529,8 @@ INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\c
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
+INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmitt10.pfb
+INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmitt10.pfb
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
@@ -545,3 +549,5 @@ INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\c
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmti12.pfb
+INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb
+INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmtt10.pfb

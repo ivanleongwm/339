@@ -172,7 +172,7 @@ In order to better communicate ideas, the key financial terminologies and formul
 The relationship between stocks, REITs and Portfolios can be illustrated in the figure below.
 \begin{figure}[H]
   \centerline{\includegraphics[width=9cm]{Stock_Porfolio_Reit}}
-  \caption{Stock vs REIT vs Portfolio}\label{visina8}
+  \caption{Stock vs REIT vs Portfolio}
   \label{fig:Stock_Porfolio_Reit}
   \end{figure}
 \subsection{Stock}
@@ -746,7 +746,7 @@ In the preprocessing step, up to 20 years of historical data with these 22 featu
 This paper takes two approaches to portfolio optimisation. 1) Optimisation with Machine Learning and 2) Alpha Tree Search using Genetic Algorithms.
 \begin{figure}[H]
 \centerline{\includegraphics[width=20cm]{Overall_Methodology}}
-\caption{Overall Workflow For This Paper}\label{visina8}
+\caption{Overall Workflow For This Paper}
 \label{fig:Overall Workflow For This Paper}
 \end{figure}
 
@@ -762,23 +762,44 @@ With reference to Figure \ref{fig:Overall Workflow For This Paper}, the first ap
 \subsection{MLR / NN / LSTM Predictions with Extended Features}
 At the pre-processing stage of all three models, data for each ticker is split into the training and test sets with a 80:20 ratio. The close price for each row is also shifted one day forward so that all 21 features can work on predicting the next day's close.  
 
+The implementation for Multiple Linear Regression is as follows:
+\begin{lstlisting}[language=Python, caption=Multiple Linear Regression Pseudocode, basicstyle=\footnotesize\ttfamily]
+  for each ticker in dictionary:
+      # Training Phase
+      X_norm = normalised matrix of 21 features (training set)
+      Y_norm = normalised array of T+1 Close Price (training set)
+  
+      model = nn.Linear(21,1) # Single Layer LR
+      criterion = nn.MSELoss() # MSE Loss Function
+      optimizer = optim.SGD(model.parameters(), lr=0.001)
 
-All 22 Features are fed as inputs the MLR, NN and LSTM models.
-\begin{lstlisting}[language=Python, caption=Multiple Linear Regression Pseudocode]
-  from scipy import optimize
-  import numpy as np
-  
-  def Linear(a, b, C):
-      num_row, num_col = C.shape
-      top = np.kron(np.identity(num_row), np.ones(num_col))
-      bot = np.kron(np.ones(num_row), np.identity(num_col))
-  
-      result = optimize.linprog(
-          c = C.ravel(),
-          A_eq = np.concatenate((top, bot[:-1]), axis = 0),
-          b_eq = np.concatenate((a, b[:-1])))
-  
-      return result.x.reshape((num_row, num_col))
+      for epoch in range(10000):
+          optimizer.zero_grad()
+          Y_pred = model(X_norm)
+          loss = criterion(Y_pred, Y_norm)
+          loss.backward()
+          optimizer.step()
+    
+      # Testing Phase
+      x_test_norm = normalised matrix of 21 features (test set)
+      y_test_norm = normalised array of T+1 Close Price (test set)
+
+      model.eval()
+      with torch.no_grad():
+        predicted = denormalise(x_test_norm)
+
+      x_test_dates = list of dates from x_test_norm
+      df_predicted = pd.DataFrame({
+          'Date':x_test_dates,
+          'Predicted': pd.DataFrame(predicted)[0].to_list(),
+          'Actual': test_set['close'].to_list()
+          })
+      df_predicted['Actual (t-1)'] = df_predicted['Actual'].shift(1)    
+      df_predicted['% Change Predicted'] = (df_predicted['Predicted'] - 
+              df_predicted['Actual (t-1)'])/df_predicted['Actual (t-1)']
+      df_predicted = df_predicted[['Date','Predicted','Actual',
+                                   'Actual (t-1)','% Change Predicted']]
+      df_predicted.to_csv('predictions/'+filename+'_pred.csv')
   \end{lstlisting}
 
 \subsection{Trade Execution Logic}
