@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.6)  11 APR 2024 22:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.3.31) (preloaded format=pdflatex 2024.4.6)  12 APR 2024 18:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1161,72 +1161,320 @@ Overfull \hbox (7.70778pt too wide) in paragraph at lines 758--758
 
 [5
 
- <./graphics/Overall_Methodology.jpg>] (C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+ <./graphics/Overall_Methodology.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 763--765
+
+ []
+
+(C:\Users\pc\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2024/03/11 1.10a listings language file
 )
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 767.
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 768.
 
-Overfull \hbox (0.59924pt too wide) in paragraph at lines 769--770
+Overfull \hbox (0.59924pt too wide) in paragraph at lines 770--771
 [][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (19.4992pt too wide) in paragraph at lines 770--772
-[][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (6.89923pt too wide) in paragraph at lines 784--785
-[][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (25.7992pt too wide) in paragraph at lines 785--787
+Overfull \hbox (19.4992pt too wide) in paragraph at lines 771--773
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 [6]
-Overfull \hbox (38.39917pt too wide) in paragraph at lines 797--798
-[][][][][][][][][][][][][][][][][][][][][][][][] 
+Overfull \hbox (6.89923pt too wide) in paragraph at lines 785--786
+[][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (57.29913pt too wide) in paragraph at lines 798--799
+Overfull \hbox (25.7992pt too wide) in paragraph at lines 786--788
 [][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (63.59912pt too wide) in paragraph at lines 799--800
+Overfull \hbox (38.39917pt too wide) in paragraph at lines 798--799
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (57.29913pt too wide) in paragraph at lines 799--800
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (63.59912pt too wide) in paragraph at lines 800--801
 [][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (6.89923pt too wide) in paragraph at lines 800--801
+Overfull \hbox (6.89923pt too wide) in paragraph at lines 801--802
 [][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (63.59912pt too wide) in paragraph at lines 801--802
+Overfull \hbox (63.59912pt too wide) in paragraph at lines 802--803
 [][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (0.59924pt too wide) in paragraph at lines 802--803
+Overfull \hbox (0.59924pt too wide) in paragraph at lines 803--804
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (11.34973pt too wide) in paragraph at lines 808--808
-|[]\OT1/cmr/bx/n/17.28 Genetic Al-go-rithm Search for Out-per-form-
+Overfull \hbox (2.41652pt too wide) detected at line 814
+$\OT1/cmr/m/n/12 110$
  []
 
 
-Overfull \hbox (4.82959pt too wide) in paragraph at lines 810--810
+Overfull \hbox (2.41652pt too wide) detected at line 814
+$\OT1/cmr/m/n/12 111$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 814
+$\OT1/cmr/m/n/12 111$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 815
+$\OT1/cmr/m/n/12 110$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 815
+$\OT1/cmr/m/n/12 112$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 815
+$\OT1/cmr/m/n/12 111$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 816
+$\OT1/cmr/m/n/12 110$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 816
+$\OT1/cmr/m/n/12 112$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 816
+$\OT1/cmr/m/n/12 112$
+ []
+
+
+Overfull \hbox (6.79681pt too wide) in paragraph at lines 810--820
+ [][] 
+ []
+
+[7]
+Overfull \hbox (0.59924pt too wide) in paragraph at lines 835--836
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.89923pt too wide) in paragraph at lines 836--837
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (0.59924pt too wide) in paragraph at lines 837--838
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (6.89923pt too wide) in paragraph at lines 839--841
+[][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 851--852
+
+ []
+
+
+Package caption Warning: \label without proper reference on input line 867.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `table:lstm_close_shift' on page 8 undefined on input line 853.
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 862
+$\OT1/cmr/m/n/12 132$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 862
+$\OT1/cmr/m/n/12 133$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 862
+$\OT1/cmr/m/n/12 130$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 862
+$\OT1/cmr/m/n/12 130$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 862
+$\OT1/cmr/m/n/12 132$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 862
+$\OT1/cmr/m/n/12 133$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 862
+$\OT1/cmr/m/n/12 134$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 863
+$\OT1/cmr/m/n/12 135$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 863
+$\OT1/cmr/m/n/12 133$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 863
+$\OT1/cmr/m/n/12 130$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 863
+$\OT1/cmr/m/n/12 130$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 863
+$\OT1/cmr/m/n/12 132$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 863
+$\OT1/cmr/m/n/12 133$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 863
+$\OT1/cmr/m/n/12 134$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 863
+$\OT1/cmr/m/n/12 135$
+ []
+
+
+Overfull \hbox (2.41652pt too wide) detected at line 864
+$\OT1/cmr/m/n/12 133$
+ []
+
+
+Overfull \hbox (1.45627pt too wide) in paragraph at lines 858--866
+[][]  
+ []
+
+[8]
+Overfull \hbox (38.39917pt too wide) in paragraph at lines 874--875
+[][][][][][][][][][][][][][][][][][] 
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 902--903
+
+ []
+
+<graphics/determining_trade_amount.png, id=147, 996.72375pt x 420.82219pt>
+File: graphics/determining_trade_amount.png Graphic file (type png)
+<use graphics/determining_trade_amount.png>
+Package pdftex.def Info: graphics/determining_trade_amount.png  used on input line 915.
+(pdftex.def)             Requested size: 483.69684pt x 204.2141pt.
+[10 <./graphics/determining_trade_amount.png>]
+Overfull \hbox (31.75978pt too wide) in paragraph at lines 925--926
+\OT1/cmr/m/n/12 ter, trade an amount equal to % Change Pre-dicted / trade[]factor[]denominator
+ []
+
+
+Overfull \hbox (57.29913pt too wide) in paragraph at lines 931--933
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (38.39917pt too wide) in paragraph at lines 946--948
+[][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (14.24733pt too wide) in paragraph at lines 950--952
+[][][][]\OT1/cmtt/m/n/10 execute stop loss and sell position at today's price.
+ []
+
+
+Overfull \hbox (8.99738pt too wide) in paragraph at lines 953--955
+[][][][]\OT1/cmtt/m/n/10 take profit and close the position at today's price.
+ []
+
+[11]
+Overfull \hbox (19.4992pt too wide) in paragraph at lines 955--956
+[][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<graphics/transaction_objects.png, id=156, 1114.1625pt x 200.24812pt>
+File: graphics/transaction_objects.png Graphic file (type png)
+<use graphics/transaction_objects.png>
+Package pdftex.def Info: graphics/transaction_objects.png  used on input line 964.
+(pdftex.def)             Requested size: 483.69684pt x 86.93306pt.
+[12 <./graphics/transaction_objects.png>]
+Overfull \hbox (22.46996pt too wide) detected at line 986
+\OML/cmm/m/it/12 Expected Total Return  \OT1/cmr/m/n/12 =  []
+ []
+
+
+Overfull \hbox (24.71603pt too wide) detected at line 991
+\OML/cmm/m/it/12 Annualised Rate of Return \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 R[]\OT1/cmr/m/n/12 )  =  (\OML/cmm/m/it/12 Expected Total Return\OT1/cmr/m/n/12 ) []
+ []
+
+<graphics/giraffes.png, id=161, 864.98157pt x 397.485pt>
+File: graphics/giraffes.png Graphic file (type png)
+<use graphics/giraffes.png>
+Package pdftex.def Info: graphics/giraffes.png  used on input line 1010.
+(pdftex.def)             Requested size: 398.33858pt x 183.04546pt.
+[13]
+<graphics/alpha tree first.png, id=167, 406.6392pt x 272.9397pt>
+File: graphics/alpha tree first.png Graphic file (type png)
+<use graphics/alpha tree first.png>
+Package pdftex.def Info: graphics/alpha tree first.png  used on input line 1018.
+(pdftex.def)             Requested size: 341.43306pt x 229.17613pt.
+<graphics/alpha tree second.png, id=168, 576.2328pt x 641.7576pt>
+File: graphics/alpha tree second.png Graphic file (type png)
+<use graphics/alpha tree second.png>
+Package pdftex.def Info: graphics/alpha tree second.png  used on input line 1024.
+(pdftex.def)             Requested size: 426.79134pt x 475.32405pt.
+ [14 <./graphics/giraffes.png> <./graphics/alpha tree first.png>]
+Overfull \hbox (4.82959pt too wide) in paragraph at lines 1029--1029
 |[]\OT1/cmr/bx/n/14.4 Application of Ge-netic Al-go-rithms to Al-pha Trees| 
  []
 
-[7] [8]
+[15 <./graphics/alpha tree second.png>]
+Overfull \hbox (6.89923pt too wide) in paragraph at lines 1059--1060
+[][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[16] [17]
 Chapter III.
 [1
 
@@ -1241,7 +1489,7 @@ Chapter 7.
 ]
 Chapter 8.
 
-Overfull \hbox (11.54387pt too wide) in paragraph at lines 847--847
+Overfull \hbox (11.54387pt too wide) in paragraph at lines 1101--1101
 |[]\OT1/cmr/bx/n/17.28 Portfolio Al-lo-ca-tion Re-sults with Best Per-
  []
 
@@ -1249,10 +1497,10 @@ Overfull \hbox (11.54387pt too wide) in paragraph at lines 847--847
 
 ]
 Chapter 9.
-<universe.jpg, id=157, 102.3825pt x 73.9563pt>
+<universe.jpg, id=195, 102.3825pt x 73.9563pt>
 File: universe.jpg Graphic file (type jpg)
 <use universe.jpg>
-Package pdftex.def Info: universe.jpg  used on input line 861.
+Package pdftex.def Info: universe.jpg  used on input line 1115.
 (pdftex.def)             Requested size: 174.0495pt x 125.72514pt.
 (main.bbl [5
 
@@ -1268,19 +1516,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 84--90
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-03-14>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 45836 strings out of 474423
- 1201280 string characters out of 5743135
- 2089673 words of memory out of 5000000
- 67514 multiletter control sequences out of 15000+600000
+ 46016 strings out of 474423
+ 1204725 string characters out of 5743135
+ 2099164 words of memory out of 5000000
+ 67694 multiletter control sequences out of 15000+600000
  569304 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  114i,21n,121p,1645b,2519s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi657\tcrm1000.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold12.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on main.pdf (43 pages, 3168820 bytes).
+ <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi657\tcrm1000.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbold/dpi600\bbold12.pk> <C:\Users\pc\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmitt10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/pc/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on main.pdf (52 pages, 4436385 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
+ 287 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 

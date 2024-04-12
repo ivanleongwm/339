@@ -31,17 +31,18 @@
 \contentsline {chapter}{\numberline {5}Methodology}{5}{}%
 \contentsline {section}{\numberline {5.1}Machine Learning for REITs Portfolio Optimisation}{6}{}%
 \contentsline {subsection}{\numberline {5.1.1}MLR / NN / LSTM Predictions with Extended Features}{6}{}%
-\contentsline {subsection}{\numberline {5.1.2}Trade Execution Logic}{7}{}%
-\contentsline {subsection}{\numberline {5.1.3}Performance Evaluation}{8}{}%
-\contentsline {section}{\numberline {5.2}Genetic Algorithm Search for Outperforming Alphas}{8}{}%
-\contentsline {subsection}{\numberline {5.2.1}Alpha Tree}{8}{}%
-\contentsline {subsection}{\numberline {5.2.2}Application of Genetic Algorithms to Alpha Trees}{8}{}%
-\contentsline {subsubsection}{\numberline {5.2.2.1}Objective Function}{8}{}%
-\contentsline {subsubsection}{\numberline {5.2.2.2}Selection}{8}{}%
-\contentsline {subsubsection}{\numberline {5.2.2.3}Crossover}{8}{}%
-\contentsline {subsubsection}{\numberline {5.2.2.4}Mutation}{8}{}%
-\contentsline {subsection}{\numberline {5.2.3}Portfolio Allocation Using Alpha}{8}{}%
-\contentsline {subsection}{\numberline {5.2.4}Performance Evaluation}{8}{}%
+\contentsline {subsection}{\numberline {5.1.2}Trade Execution Logic}{10}{}%
+\contentsline {subsection}{\numberline {5.1.3}Performance Evaluation}{12}{}%
+\contentsline {section}{\numberline {5.2}Genetic Algorithm (GA) Search for Outperforming Alphas}{13}{}%
+\contentsline {subsection}{\numberline {5.2.1}Alpha Tree}{14}{}%
+\contentsline {subsection}{\numberline {5.2.2}Application of Genetic Algorithms to Alpha Trees}{16}{}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}Generate Starting Population}{16}{}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}Objective Function}{16}{}%
+\contentsline {subsubsection}{\numberline {5.2.2.3}Selection}{16}{}%
+\contentsline {subsubsection}{\numberline {5.2.2.4}Crossover}{17}{}%
+\contentsline {subsubsection}{\numberline {5.2.2.5}Mutation}{17}{}%
+\contentsline {subsection}{\numberline {5.2.3}Portfolio Allocation Using Alpha}{17}{}%
+\contentsline {subsection}{\numberline {5.2.4}Performance Evaluation}{17}{}%
 \contentsline {chapter}{\numberline {III}Experiments}{1}{}%
 \contentsline {chapter}{\numberline {6}Post-processed Financial Datasets}{2}{}%
 \contentsline {chapter}{\numberline {7}Machine Learning Results}{3}{}%
