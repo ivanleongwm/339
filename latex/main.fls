@@ -405,6 +405,12 @@ INPUT .\graphics\1.nus_logo_full-horizontal.jpg
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\pc\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
+INPUT .\graphics\signature.png
+INPUT .\graphics\signature.png
+INPUT .\graphics\signature.png
+INPUT .\graphics\signature.png
+INPUT .\graphics\signature.png
+INPUT .\graphics\signature.png
 INPUT .\main.toc
 INPUT .\main.toc
 INPUT main.toc

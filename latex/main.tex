@@ -69,7 +69,7 @@
 \titleformat{\chapter}[display]{\Large}{\centering
   \MakeUppercase{\chaptername}\quad{\Huge\thechapter}}{10pt}{\titlerule[.5pt]\vspace{10pt}\centering
   \MakeUppercase}[\vspace{10pt}{\titlerule[.5pt]}]% <-- spacing of title bar
-\titlespacing{\chapter}{0pt}{-20pt}{1cm}% <-- spacing of title bar
+\titlespacing{\chapter}{0pt}{100pt}{1cm}% <-- spacing of title bar
 
 
 \usepackage{amsthm, amsmath, amssymb, mathtools, mathbbol}
@@ -101,19 +101,29 @@ Internal Capstone Project for AY2023/2024
 \end{center}
 
 \chapter*{Abstract}
-An internal project about applying genetic algorithm to search for optimal alphas.    
-State the major contribution:
+An internal project which aims to develop an effective Real Estate Portfolio Optimisation Model that maximises profits and minimises risks, outperforming the market indexes with a sharpe ratio of more than 2. This paper's main contributions are the successful combination of Genetic Algorithms to search for outperforming Alphas, thereby creating a portfolio optimisation model that is more profitable and less risky than the market index. The paper also extends past research by incorporating fundamental analysis into ML models and implements a trade execution logic for portfolio allocation for ML models. 
+
 
 \chapter*{Declaration}
 \begin{center}{\large
 I hereby declare that this project report is my original work and it has been written by me in its entirety. I have duly acknowledged all the sources of information which have been used in this report. \\[0.5in]
 This report has also not been submitted for any degree in any university previously.
+
+\begin{figure}[H]
+  \centerline{\includegraphics[width=5cm]{signature}}
+\end{figure}
+Leong Wei Ming\\
+
+14 September 2024
 }
 
 \chapter*{Acknowledgement}
 {\large
 I would like to thank Professor Liu Lili for her guidance, support and encouragement throughout the course of this project. Working with Professor Lili has been a great learning experience, getting to learn much more about machine learning and its applications to finance in solving some challenges faced by industry practitioners. \\[0.5in]
-Also many thanks to Professor Chin Wei Ngan for taking the time out to assess this project.
+
+Many thanks to Professor Chin Wei Ngan for taking the time out to assess this project. \\[0.5in]
+
+Also, I would like to thank my friend Gabriel, my parents and my girlfriend Joy for their support throughout this process. 
 
 }
 \end{center}
@@ -583,9 +593,9 @@ Macro-economic Analysis: Considering various measures of the wider economic envi
     \begin{tabular}{|p{2.6cm}|p{2.7cm}|p{2.7cm}|p{3.5cm}|p{5cm}|p{5cm}|p{4cm}|}
     \hline
     \textbf{Methods} & \textbf{Data Inputs} & \textbf{Objectives} & \textbf{Scope for REITs} & \textbf{Strengths} & \textbf{Weaknesses} & \textbf{References}  
-    \\ \hline\rowcolor[gray]{.8}Recurrent Neural Networks (RNN) & Daily Price-Volume Data & Stock Price Prediction & & +Relatively low RMSE error for stock price prediction\par + Remembers historical stock prices & - Susceptible to vanishing and exploding gradient problem & (Dey et. al., 2021) 
+    \\ \hline Recurrent Neural Networks (RNN) & Daily Price-Volume Data & Stock Price Prediction & & +Relatively low RMSE error for stock price prediction\par + Remembers historical stock prices & - Susceptible to vanishing and exploding gradient problem & (Dey et. al., 2021) 
     \\ \hline Long-Short Term Memory (LSTM) & Daily Price-Volume Data & Stock Price Prediction & Stock Price Prediction & + One of the lowest RMSE error for financial time series prediction \par+ Remembers historical stock prices which are good indicators of future prices \par+ Solves the vanishing and exploding gradient problem & - Mixed results when predicting REIT stock prices & (Axelsson \& Song, 2023),   (Habbab \& Kampouridis, 2022), (Obthong et. al., 2020) 
-    \\ \hline\rowcolor[gray]{.8} Random Forest (RF) & Daily Price-Volume Data, Fundamental Data & Stock Price Prediction & & + One of the few papers to incorporate fundamental data into machines learning models & - Relatively low sharpe ratio compared to market indexes & (Cao, 2021), (Huang et. al., 2021)  
+    \\ \hline Random Forest (RF) & Daily Price-Volume Data, Fundamental Data & Stock Price Prediction & & + One of the few papers to incorporate fundamental data into machines learning models & - Relatively low sharpe ratio compared to market indexes & (Cao, 2021), (Huang et. al., 2021)  
     \\ \hline Genetic Algorithms & Daily Price-Volume Data & Stock Price Prediction and Clustering & & + Suitable for problems with a large search space \par+ Works well with large time-series data & & (Obthong et. al., 2020) 
     \\ \hline
     \end{tabular}
