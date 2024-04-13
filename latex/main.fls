@@ -244,6 +244,13 @@ INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\tools\afterpage.sty
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\tools\afterpage.sty
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\ragged2e\ragged2e.sty
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\ragged2e\ragged2e.sty
+INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.sty
+INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\generic\iftex\ifvtex.sty
+INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
+INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\geometry\geometry.cfg
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\changepage\changepage.sty
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\changepage\changepage.sty
 INPUT C:\Users\pc\AppData\Local\Programs\MiKTeX\tex\latex\makecell\makecell.sty
@@ -538,12 +545,72 @@ INPUT .\graphics\alpha tree second.png
 INPUT .\graphics\alpha tree second.png
 INPUT .\graphics\alpha tree second.png
 INPUT .\graphics\alpha tree second.png
-INPUT .\universe.jpg
-INPUT .\universe.jpg
-INPUT .\universe.jpg
-INPUT .\universe.jpg
-INPUT .\universe.jpg
-INPUT .\universe.jpg
+INPUT .\graphics\pnl.png
+INPUT .\graphics\pnl.png
+INPUT .\graphics\pnl.png
+INPUT .\graphics\pnl.png
+INPUT .\graphics\pnl.png
+INPUT .\graphics\pnl.png
+INPUT .\graphics\ML Predictions PLD Price.png
+INPUT .\graphics\ML Predictions PLD Price.png
+INPUT .\graphics\ML Predictions PLD Price.png
+INPUT .\graphics\ML Predictions PLD Price.png
+INPUT .\graphics\ML Predictions PLD Price.png
+INPUT .\graphics\ML Predictions PLD Price.png
+INPUT .\graphics\MSE of ML models.png
+INPUT .\graphics\MSE of ML models.png
+INPUT .\graphics\MSE of ML models.png
+INPUT .\graphics\MSE of ML models.png
+INPUT .\graphics\MSE of ML models.png
+INPUT .\graphics\MSE of ML models.png
+INPUT .\graphics\ML_portfolio_value_movement.png
+INPUT .\graphics\ML_portfolio_value_movement.png
+INPUT .\graphics\ML_portfolio_value_movement.png
+INPUT .\graphics\ML_portfolio_value_movement.png
+INPUT .\graphics\ML_portfolio_value_movement.png
+INPUT .\graphics\ML_portfolio_value_movement.png
+INPUT .\graphics\LR Cash Balance.png
+INPUT .\graphics\LR Cash Balance.png
+INPUT .\graphics\LR Cash Balance.png
+INPUT .\graphics\LR Cash Balance.png
+INPUT .\graphics\LR Cash Balance.png
+INPUT .\graphics\LR Cash Balance.png
+INPUT .\graphics\Total Portfolio Value LR.png
+INPUT .\graphics\Total Portfolio Value LR.png
+INPUT .\graphics\Total Portfolio Value LR.png
+INPUT .\graphics\Total Portfolio Value LR.png
+INPUT .\graphics\Total Portfolio Value LR.png
+INPUT .\graphics\Total Portfolio Value LR.png
+INPUT .\graphics\ML_results_comparison.png
+INPUT .\graphics\ML_results_comparison.png
+INPUT .\graphics\ML_results_comparison.png
+INPUT .\graphics\ML_results_comparison.png
+INPUT .\graphics\ML_results_comparison.png
+INPUT .\graphics\ML_results_comparison.png
+INPUT .\graphics\generated_alphas.png
+INPUT .\graphics\generated_alphas.png
+INPUT .\graphics\generated_alphas.png
+INPUT .\graphics\generated_alphas.png
+INPUT .\graphics\generated_alphas.png
+INPUT .\graphics\generated_alphas.png
+INPUT .\graphics\Alphas Profit Over Time.png
+INPUT .\graphics\Alphas Profit Over Time.png
+INPUT .\graphics\Alphas Profit Over Time.png
+INPUT .\graphics\Alphas Profit Over Time.png
+INPUT .\graphics\Alphas Profit Over Time.png
+INPUT .\graphics\Alphas Profit Over Time.png
+INPUT .\graphics\final comparison.png
+INPUT .\graphics\final comparison.png
+INPUT .\graphics\final comparison.png
+INPUT .\graphics\final comparison.png
+INPUT .\graphics\final comparison.png
+INPUT .\graphics\final comparison.png
+INPUT .\graphics\Final Comparsion of Models.png
+INPUT .\graphics\Final Comparsion of Models.png
+INPUT .\graphics\Final Comparsion of Models.png
+INPUT .\graphics\Final Comparsion of Models.png
+INPUT .\graphics\Final Comparsion of Models.png
+INPUT .\graphics\Final Comparsion of Models.png
 INPUT .\main.bbl
 INPUT .\main.bbl
 INPUT main.bbl

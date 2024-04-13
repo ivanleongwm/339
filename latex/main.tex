@@ -17,6 +17,7 @@
 \usepackage{afterpage}
 \usepackage{graphicx}
 \usepackage[raggedrightboxes]{ragged2e}
+\usepackage[bottom=3cm, right=2.5cm, left=2.5cm, top=3cm]{geometry}
 \usepackage{changepage}
 \usepackage{makecell}
 \usepackage{colortbl}
@@ -1065,9 +1066,91 @@ The selection function defines how parent Alphas are selected from the populatio
 \end{lstlisting}
 
 \subsubsection{Crossover}
+\begin{lstlisting}[language=Python, caption=Crossover Function Pseudocode, basicstyle=\footnotesize\ttfamily]
+  r_cross = probability of crossover occuring
+  def crossover(parent1,parent2,r_cross):
+    if probability exceeds r_cross:
+      # Crossover occurs
+      for each parent p1 and p2:
+        slice parents into left and right at a valid intersection
+        ensure equal number of left and right brackets, 
+        append brackets if neccesary
+      child1 = parent1 left + parent2 right
+      child2 = parent2 left + parent1 right
+      return [child1,child2]
+    else:
+      # No crossover
+      return [parent1,parent2]
+\end{lstlisting}
+
 \subsubsection{Mutation}
+
+\begin{lstlisting}[language=Python, caption=Mutation Function Pseudocode, basicstyle=\footnotesize\ttfamily]
+  r_mut = probability of mutation occuring
+  def mutation(alpha,fields,r_mut):
+    for each feature in datafields:
+      if probability exceeds r_mut:
+        Search Alpha for feature and replace it randomly
+    return mutated Alpha
+\end{lstlisting}
+
+\subsubsection{Genetic Algorithm}
+
+\begin{lstlisting}[language=Python, caption=Genetic Algorithm Pseudocode, basicstyle=\footnotesize\ttfamily]
+define genetic_algorithm(objective_function, datafields, 
+                          n_iter, n_pop, r_cross, r_mut):
+
+# Randomly generate the initial population
+pop = generateAlphas(number,datafields,operator)
+
+# Keep track of best Alpha and objective score
+best, best_eval
+
+for each iteration in n_iter:
+  scores = [objective(alpha) for alpha in pop]
+
+  # Check for new best solution
+  for member in pop:
+    if score of member > best_eval:
+      best = member
+      best_eval = member score
+
+  # Select parents
+  select n_pop number of parents using selection function on pop
+
+  # Create next generation
+  new_pop = run crossover and mutation functions on selected parents
+
+  # Replace old pop with new pop and move to next iteration
+  pop = new_pop
+
+# After all iterations are complete, return the best alpha
+return best,best_eval
+\end{lstlisting}
+
 \subsection{Portfolio Allocation Using Alpha}
+The best alpha is applied in the manner explained in Figure \ref{fig:alpha table} to create the column in yellow as illustrated in Figure \ref{fig:pnl_table}. By taking the cumulative sum of the yellow column we create the column in green.
+\begin{figure}[H]
+  \centerline{\includegraphics[width=7cm]{pnl}}
+  \caption{Daily and Cumulative PnL}
+  \label{fig:pnl_table}
+\end{figure}
+
+The latest number in the green column represents the total profit on investment. 
 \subsection{Performance Evaluation}
+
+
+The method of measuring performance is the same used in the Machine Learning approach, save for slight changes to the equation for Expected Total Return
+
+\begin{equation*}
+  Amount\,Invested\,=\,20\,Million
+\end{equation*}  
+\underline{Expected Return}:
+\begin{equation*}
+  Expected\,Total\,Return\,=\,\frac{Total\,Profit\,on\,Investment\,+\,Amount\,Invested}{Amount\,Invested}
+\end{equation*}
+
+
 
 \titleformat{\chapter}[block]
   {\normalfont\huge\bfseries}{\thechapter.}{1em}{\Huge\centering}
@@ -1087,35 +1170,114 @@ The selection function defines how parent Alphas are selected from the populatio
 
 \chapter{Machine Learning Results}
 \section{Evaluating Stock Price Predictions}
+\begin{figure}[H]
+  \centerline{\includegraphics[width=17cm]{ML Predictions PLD Price}}
+  \caption{PLD Share Price Predicted vs Actual}
+  \label{fig:PLD_price_pred}
+\end{figure}
+
+\begin{figure}[H]
+  \centerline{\includegraphics[width=13cm]{MSE of ML models}}
+  \caption{Mean Squared Error of Prediction Models}
+  \label{fig:MSE_ML}
+\end{figure}
+
 \subsection{Multiple Linear Regression (MLR)}
 \subsection{Neural Networks (NN)}
 \subsection{Long-Short Term Memory (LSTM)}
 \section{Trade Execution Results with Different Parameters}
+
+\begin{figure}[H]
+  \centerline{\includegraphics[width=20cm]{ML_portfolio_value_movement}}
+  \caption{Value of Each Ticker As Portfolio Allocation Occurs Over The Period}
+  \label{fig:portfolio_movement}
+\end{figure}
+
+Correspondingly, the cash balances after various stock tickers are bought or shorted is given in Figure \ref{fig:Cash Balance of Portfolio}.
+\begin{figure}[H]
+  \centerline{\includegraphics[width=13cm]{LR Cash Balance}}
+  \caption{Cash Balance of Portfolio Over The Period}
+  \label{fig:Cash Balance of Portfolio}
+\end{figure}
+
+\begin{figure}[H]
+  \centerline{\includegraphics[width=13cm]{Total Portfolio Value LR}}
+  \caption{Total Portfolio Value (Stocks + Cash) Over Time}
+  \label{fig:Cash Balance of Portfolio}
+\end{figure}
+
+
+
 \section{Overall Evaluation of Performances}
+
+\begin{figure}[H]
+  \centerline{\includegraphics[width=16cm]{ML_results_comparison}}
+  \caption{Comparision of Results for MLR/NN/LSTM}
+  \label{fig:Comparison of Results}
+\end{figure}
+
+
 
 \chapter{Alpha Tree Search Results}
 \section{Alphas Generated}
-\subsection{Initial Set}
-\subsection{Intermediate Alphas}
-\subsection{Best Performing Alphas}
+The GA search of the Alpha Tree was run 5 times, with 20 iterations each and it generated the following high performing alphas:
+\begin{figure}[H]
+  \centerline{\includegraphics[width=20cm]{generated_alphas}}
+  \caption{Top 3 Results from Alpha Tree Search}
+  \label{fig:alphas_generated}
+\end{figure}
+
 \section{Portfolio Allocation Results with Best Performing Alphas}
-\section{Overall Evaluation of Performance}
+
+\begin{figure}[H]
+  \centerline{\includegraphics[width=15cm]{Alphas Profit Over Time}}
+  \caption{Cumulative PnL for Top 3 Alphas}
+  \label{fig:pnl_top_3}
+\end{figure}
+All 3 top performing Alphas resulting from the Genetic Algorithm have a high sharpe ratio and annualised return (Figure \ref{fig:alphas_generated}) and a strong and consistently growing profit over the years (Figure \ref{fig:pnl_top_3}). Using a starting investment capital of 20 Million dollars, all three Alphas managed to reap more than 100\% returns over a 3 year period demonstrating the strength of the GA technique of searching for outperforming Alphas. Moreover, the risk is maintained at a relatively low level at a 5\% standard deviation. This suggests that even in the worst case scenarios trading with these Alphas would still generate strong supernormal profits.
 
 
 \chapter{Conclusion}
-\section{Benchmarking Against Index Funds}
-\section{Comparing Results with Literature Review}
+\section{Benchmarking Against Indexes, ARIMA, GARCH}
+\begin{figure}[H]
+  \centerline{\includegraphics[width=20cm]{final comparison}}
+  \caption{Benchmarking This Paper's Approaches}
+  \label{fig:final_comparison}
+\end{figure}
+
+
+
+\section{Comparing Characteristics of Approaches}
+\begin{figure}[H]
+  \centerline{\includegraphics[width=15cm]{Final Comparsion of Models}}
+  \caption{Comparing Approaches on Profitability, Risk, Accuracy and Recall}
+  \label{fig:final_comparison_of_models}
+\end{figure}
+
+
+
 \section{Key Findings}
+- GA search for Alphas significantly outperforms other approaches 
+  > possibly  because of a market neutral portfolio 
+
+- Machine learning approaches outpeform traditional approaches
+
 \section{Major Contribution and Creativity}
+
+- Novel and profitable approach toward REIT portfolio optimisation using Alphas (Creative use of Genetic Algorithms and applying it to searching for Alphas)
+- Machine Learning with Fundamental Data sets over 150 Tickers, a way to purchase that data at a low price for future research
+- Implementation of Trade Execution logic (code can be found on github)
+
+
+
 \section{Future Work}
+- expand datafields and operators in genetic algorithm (currently fundamental freqency diff from daily need to resolve), give examples  of such examples of operators 
+- 
+
+
+
 \subsection{More Operators and Features for Alphas}
 
-\begin{figure}[h!]
-\centering
-\includegraphics[scale=1.7]{universe}
-\caption{The Universe}
-\label{fig:universe}
-\end{figure}
 
 
 \bibliographystyle{plain}
