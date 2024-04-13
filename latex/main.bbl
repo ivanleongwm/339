@@ -21,6 +21,10 @@ Birger Axelsson and Han-Suck Song.
 \newblock Univariate {Forecasting} for {REITs} with {Deep} {Learning}: {A}
   {Comparative} {Analysis} with an {ARIMA} {Model}, 2023.
 
+\bibitem{bryant_why_2023}
+Sean Bryant.
+\newblock Why {You} {Should} {Never} {Short} a {Stock}, 2023.
+
 \bibitem{cao_fundamental_2021}
 Kai Cao.
 \newblock Fundamental {Analysis} via {Machine} {Learning}.
@@ -87,6 +91,11 @@ Mehtabhorn Obthong, Nongnuch Tantisantiwong, Watthanasak Jeamwatthanachai, and
   and techniques.
 \newblock pages 63--71, May 2020.
 \newblock Num Pages: 9.
+
+\bibitem{ross_fundamentals_2021}
+Stephen Ross.
+\newblock {\em Fundamentals of {Corporate} {Finance}}.
+\newblock March 2021.
 
 \bibitem{ruse_charles_1975}
 Michael Ruse.

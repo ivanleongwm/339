@@ -1,28 +1,27 @@
-\contentsline {chapter}{\numberline {1}Introduction}{2}{}%
-\contentsline {section}{\numberline {1.1}Problem Definition}{2}{}%
-\contentsline {section}{\numberline {1.2}Motivations}{3}{}%
-\contentsline {section}{\numberline {1.3}Major Contributions and Creativity}{3}{}%
-\contentsline {chapter}{\numberline {I}Background}{1}{}%
-\contentsline {chapter}{\numberline {2}Financial Terminology and Concepts}{2}{}%
-\contentsline {section}{\numberline {2.1}Key Terms}{2}{}%
-\contentsline {subsection}{\numberline {2.1.1}Stock}{2}{}%
-\contentsline {subsection}{\numberline {2.1.2}Real Estate Investment Trusts (REITs)}{3}{}%
-\contentsline {subsection}{\numberline {2.1.3}Portfolio}{3}{}%
-\contentsline {subsection}{\numberline {2.1.4}Shorting}{4}{}%
-\contentsline {section}{\numberline {2.2}Evaluating Investments with Data}{4}{}%
-\contentsline {subsection}{\numberline {2.2.1}Technical Analysis with Price Volume Data}{4}{}%
-\contentsline {subsubsection}{\numberline {2.2.1.1}Profit and Loss (PnL)}{5}{}%
-\contentsline {subsubsection}{\numberline {2.2.1.2}Risk and Volatility}{6}{}%
-\contentsline {subsubsection}{\numberline {2.2.1.3}Sharpe Ratio}{7}{}%
-\contentsline {subsection}{\numberline {2.2.2}Fundamental Analysis with Financial Statements}{8}{}%
-\contentsline {subsection}{\numberline {2.2.3}Alpha Formulas}{8}{}%
-\contentsline {subsection}{\numberline {2.2.4}Other Methods of Analyses}{10}{}%
-\contentsline {chapter}{\numberline {3}Literature Review of Portfolio Optimisation Techniques}{11}{}%
-\contentsline {section}{\numberline {3.1}Optimal Portfolio Theory}{11}{}%
-\contentsline {section}{\numberline {3.2}Comparison of Traditional and Machine Learning Techniques}{13}{}%
-\contentsline {section}{\numberline {3.3}Comparison of Traditional and Machine Learning Techniques (Continued)}{14}{}%
-\contentsline {subsection}{\numberline {3.3.1}Predictive Accuracy}{15}{}%
-\contentsline {subsection}{\numberline {3.3.2}Gaps in Past Research to be Addressed}{15}{}%
+\contentsline {chapter}{\numberline {1}Introduction}{1}{}%
+\contentsline {section}{\numberline {1.1}Problem Definition}{1}{}%
+\contentsline {section}{\numberline {1.2}Motivations}{2}{}%
+\contentsline {section}{\numberline {1.3}Major Contributions and Creativity}{2}{}%
+\contentsline {chapter}{\numberline {I}Background}{3}{}%
+\contentsline {chapter}{\numberline {2}Financial Terminology and Concepts}{4}{}%
+\contentsline {section}{\numberline {2.1}Key Terms}{4}{}%
+\contentsline {subsection}{\numberline {2.1.1}Stock}{4}{}%
+\contentsline {subsection}{\numberline {2.1.2}Real Estate Investment Trusts (REITs)}{5}{}%
+\contentsline {subsection}{\numberline {2.1.3}Portfolio}{5}{}%
+\contentsline {subsection}{\numberline {2.1.4}Shorting}{6}{}%
+\contentsline {section}{\numberline {2.2}Evaluating Investments with Data}{6}{}%
+\contentsline {subsection}{\numberline {2.2.1}Technical Analysis with Price Volume Data}{6}{}%
+\contentsline {subsubsection}{\numberline {2.2.1.1}Profit and Loss (PnL)}{7}{}%
+\contentsline {subsubsection}{\numberline {2.2.1.2}Risk and Volatility}{8}{}%
+\contentsline {subsubsection}{\numberline {2.2.1.3}Sharpe Ratio}{9}{}%
+\contentsline {subsection}{\numberline {2.2.2}Fundamental Analysis with Financial Statements}{10}{}%
+\contentsline {subsection}{\numberline {2.2.3}Alpha Formulas}{10}{}%
+\contentsline {subsection}{\numberline {2.2.4}Other Methods of Analyses}{12}{}%
+\contentsline {chapter}{\numberline {3}Literature Review of Portfolio Optimisation Techniques}{13}{}%
+\contentsline {section}{\numberline {3.1}Comparison of Traditional and Machine Learning Techniques}{13}{}%
+\contentsline {section}{\numberline {3.2}Comparison of Traditional and Machine Learning Techniques (Continued)}{14}{}%
+\contentsline {subsection}{\numberline {3.2.1}Predictive Accuracy}{15}{}%
+\contentsline {subsection}{\numberline {3.2.2}Gaps in Past Research to be Addressed}{15}{}%
 \contentsline {chapter}{\numberline {II}Innovation}{1}{}%
 \contentsline {chapter}{\numberline {4}Datasets}{2}{}%
 \contentsline {section}{\numberline {4.1}Extended Fundamental Data Features}{2}{}%
@@ -43,15 +42,12 @@
 \contentsline {subsubsection}{\numberline {5.2.2.5}Mutation}{16}{}%
 \contentsline {subsubsection}{\numberline {5.2.2.6}Genetic Algorithm}{16}{}%
 \contentsline {subsection}{\numberline {5.2.3}Portfolio Allocation Using Alpha}{17}{}%
-\contentsline {subsection}{\numberline {5.2.4}Performance Evaluation}{17}{}%
+\contentsline {subsection}{\numberline {5.2.4}Performance Evaluation}{18}{}%
 \contentsline {chapter}{\numberline {III}Experiments}{1}{}%
-\contentsline {chapter}{\numberline {6}Post-processed Financial Datasets}{2}{}%
+\contentsline {chapter}{\numberline {6}Post-processed Financial Dataset}{2}{}%
 \contentsline {chapter}{\numberline {7}Machine Learning Results}{3}{}%
 \contentsline {section}{\numberline {7.1}Evaluating Stock Price Predictions}{3}{}%
-\contentsline {subsection}{\numberline {7.1.1}Multiple Linear Regression (MLR)}{5}{}%
-\contentsline {subsection}{\numberline {7.1.2}Neural Networks (NN)}{5}{}%
-\contentsline {subsection}{\numberline {7.1.3}Long-Short Term Memory (LSTM)}{5}{}%
-\contentsline {section}{\numberline {7.2}Trade Execution Results with Different Parameters}{5}{}%
+\contentsline {section}{\numberline {7.2}Trade Execution Results with Different Parameters}{4}{}%
 \contentsline {section}{\numberline {7.3}Overall Evaluation of Performances}{7}{}%
 \contentsline {chapter}{\numberline {8}Alpha Tree Search Results}{8}{}%
 \contentsline {section}{\numberline {8.1}Alphas Generated}{8}{}%
@@ -59,7 +55,6 @@
 \contentsline {chapter}{\numberline {9}Conclusion}{10}{}%
 \contentsline {section}{\numberline {9.1}Benchmarking Against Indexes, ARIMA, GARCH}{10}{}%
 \contentsline {section}{\numberline {9.2}Comparing Characteristics of Approaches}{11}{}%
-\contentsline {section}{\numberline {9.3}Key Findings}{11}{}%
+\contentsline {section}{\numberline {9.3}Key Findings}{12}{}%
 \contentsline {section}{\numberline {9.4}Major Contribution and Creativity}{12}{}%
-\contentsline {section}{\numberline {9.5}Future Work}{12}{}%
-\contentsline {subsection}{\numberline {9.5.1}More Operators and Features for Alphas}{12}{}%
+\contentsline {section}{\numberline {9.5}Future Work}{13}{}%

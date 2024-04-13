@@ -69,7 +69,7 @@
 \titleformat{\chapter}[display]{\Large}{\centering
   \MakeUppercase{\chaptername}\quad{\Huge\thechapter}}{10pt}{\titlerule[.5pt]\vspace{10pt}\centering
   \MakeUppercase}[\vspace{10pt}{\titlerule[.5pt]}]% <-- spacing of title bar
-\titlespacing{\chapter}{0pt}{-80pt}{1cm}% <-- spacing of title bar
+\titlespacing{\chapter}{0pt}{-50pt}{1cm}% <-- spacing of title bar
 
 
 \usepackage{amsthm, amsmath, amssymb, mathtools, mathbbol}
@@ -86,14 +86,13 @@
 \graphicspath{{graphics/}}
 
 \begin{document}
-
+\pagenumbering{gobble}
 
 \begin{center}
-
 \Large NATIONAL UNIVERSITY OF SINGAPORE\\ 
 \Large Master's of Computing (General-Track) \\ [0.2in]
 \includegraphics[width=10cm]{1.nus_logo_full-horizontal} \\
-\Large {\bf Alpha Tree Search and Machine Learning Approaches to Optimising Real Estate Portfolios}\\ [0.2in]
+\Large {\bf Alpha Tree Search and Machine Learning Approaches to Optimising Real Estate Portfolios}\\ [0.5in]
 Leong Wei Ming \\
 Supervisor: Professor Liu Li Li \\
 Examiner: Professor Chin Wei Ngan \\ [0.3in]
@@ -121,23 +120,26 @@ Also many thanks to Professor Chin Wei Ngan for taking the time out to assess th
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
 
+
 \tableofcontents
+
 
 \setcounter{chapter}{1}
 \renewcommand{\thechapter}{\arabic{chapter}}
 \pagenumbering{arabic}
 \setcounter{chapter}{0}
+\setcounter{page}{0}
 \chapter{Introduction}
-The saying goes that once a profitable trading formula has been discovered and traded on by enough people, its profits will be eroded away and it will cease to be profitable. Traders and investors appear to be playing a never-ending game of "Hide-and-Seek" in search of profitable trading strategies. Due to the evolving nature of the financial markets, traditional financial time-series forecasting models which are static in nature are becoming less effective than Machine Learning models and dynamic algorithms in identifying the best investments \cite{sheth_predicting_2023}. The success of Machine Learning has led to numerous research papers applying a myriad of Machine Learning techniques to predict stock prices \cite{obthong_survey_2020}. However, fewer papers apply these approaches in the Real Estate sector and these papers largely focus on future stock price prediction rather than portfolio allocation as a whole \cite{habbab_-depth_2024}. Many of these papers also use price-volume data without fundamental financial data as inputs. In 2022, the global real estate sector was worth more than \$380 trillion and worth more than the global equity and bond markets combined \cite{tostevin_total_2023}, with approximately 893 listed Real Estate Investment Trusts (REITs) \cite{nareit_global_2024}. Hence, addressing the research gaps in this sector is particularly valuable.
+The saying goes that once a profitable trading formula has been discovered and traded on by enough people, its profits will be eroded away and it will cease to be profitable. Traders and investors appear to be playing a never-ending game of "Hide-and-Seek" in search of profitable trading strategies. Due to the evolving nature of the financial markets, traditional financial time-series forecasting models which are static in nature are becoming less effective than Machine Learning models and dynamic algorithms in identifying the best investments (Sheth \& Manan, 2023). The success of Machine Learning has led to numerous research papers applying a myriad of Machine Learning techniques to predict stock prices (Obthong et.al., 2020). However, fewer papers apply these approaches in the Real Estate sector and these papers largely focus on future stock price prediction rather than portfolio allocation as a whole (Habab \& Kampouridis, 2024). Many of these papers also use price-volume data without fundamental financial data as inputs. In 2022, the global real estate sector was worth more than \$380 trillion and worth more than the global equity and bond markets combined (Tostevin \& Rushton, 2023), with approximately 893 listed Real Estate Investment Trusts (REITs) (Nareit, 2024). Hence, addressing the research gaps in this sector is particularly valuable.
 
 
 \section{Problem Definition}
 The aim of this report is to develop an effective real estate portfolio optimisation model that maximises profits, minimises risks and outperforms the market indexes with a sharpe ratio of more than 2. A novel approach of applying Genetic Algorithms to search for outperforming Alpha formulas, as well as, three Machine Learning models, namely, Multiple Linear Regression (MLR), Neural Networks (NN) and Long-Short Term Memory (LSTM) are used to construct models. A trading agent is also constructed to allocate funds to the portfolio based on the results from the models. The input data to the Machine Learning models will be extended beyond price-volume data to include fundamental stock data. The models will be trained on 10 years worth of real market data. Then, the performances of these approaches will be compared with traditional financial models and the market indexes.
 
 \section{Motivations}
-Interviews of traders and financial journalists have revealed that both technical and fundamental analysis are used for forecasting investments, for shorter and medium to long term investment horizons respectively \cite{oberlechner_importance_2001}. Given that most investments in real estate are meant for the medium to long term, the lack of fundamental data inputs for REITs stock price predictions reveals a pressing need for fundamental data to be incorporated. \\ 
+Interviews of traders and financial journalists have revealed that both technical and fundamental analysis are used for forecasting investments, for shorter and medium to long term investment horizons respectively (Oberlechner, 2001). Given that most investments in real estate are meant for the medium to long term, the lack of fundamental data inputs for REITs stock price predictions reveals a pressing need for fundamental data to be incorporated. \\ 
 
-In the field of quantitative trading, quant firms seek to develop predictive algorithms for quantitative trading called "Alphas" that determine how capital is allocated to portfolios profitably \cite{tulchinsky_finding_2019}. What began with investment experts manually constructing Alpha formulas has gradually been replaced with automated alpha mining techniques that employ Machine Learning algorithms \cite{wang_alpha-gpt_2023}. There appears to be an opportunity to apply the concept of quantitative finance Alphas for Real Estate portfolio allocation. In addition, researchers have been inspired by Charles Darwin's theory of evolution \cite{ruse_charles_1975} to develop a Genetic Algorithm and have applied it in finance \cite{aguilar-rivera_genetic_2015}. Synthesising these two ideas, presents a new and innovative approach to use Genetic Algorithms to search for Alphas in the Real Estate sector. \\
+In the field of quantitative trading, quant firms seek to develop predictive algorithms for quantitative trading called "Alphas" that determine how capital is allocated to portfolios profitably (Tulchinsky, 2019). What began with investment experts manually constructing Alpha formulas has gradually been replaced with automated alpha mining techniques that employ Machine Learning algorithms (Wang et. al., 2023). There appears to be an opportunity to apply the concept of quantitative finance Alphas for Real Estate portfolio allocation. In addition, researchers have been inspired by Charles Darwin's theory of evolution (Ruse, 1975) to develop a Genetic Algorithm and have applied it in finance (Aguilar-Rivera et. al., 2015). Synthesising these two ideas, presents a new and innovative approach to use Genetic Algorithms to search for Alphas in the Real Estate sector. \\
 
 Lastly, as most of past research is centered on price prediction, there is a need to develop trade execution logic to allocate portfolios based on these predictions.
 
@@ -154,9 +156,10 @@ Overall, this research paper has expanded the body of knowledge on the applicati
 
 \titleformat{\chapter}[block]
   {\normalfont\huge\bfseries}{\thechapter.}{1em}{\Huge\centering}
-\titlespacing*{\chapter}{0pt}{150pt}{0pt}
+\titlespacing*{\chapter}{0pt}{230pt}{0pt}
 \setcounter{chapter}{0}
 \renewcommand{\thechapter}{\Roman{chapter}}
+
 \chapter{Background}
 
 
@@ -167,8 +170,9 @@ Overall, this research paper has expanded the body of knowledge on the applicati
 \renewcommand{\thechapter}{\arabic{chapter}}
 
 \pagenumbering{arabic}
+\setcounter{page}{3}
 \chapter{Financial Terminology and Concepts}
-In order to better communicate ideas, the key financial terminologies and formulas will be explained. Particularly the difference between a stock, REIT and a portfolio, the difference between technical and fundamental analysis and the concept of Alphas. This builds the foundation for further discussions on the measures of portfolio performance, namely, profits/losses and the sharpe ratio. Other methods of analysis such as sentiment and macro-economic analysis is also briefly discussed. 
+In order to better communicate ideas, the key financial terminologies and formulas are synthesised from Stephen Ross' Corporate Finance textbook (2021) and applied to the context of this paper. Particularly the difference between a stock, REIT and a portfolio, the difference between technical and fundamental analysis and the concept of Alphas. This builds the foundation for further discussions on the measures of portfolio performance, namely, profits/losses and the sharpe ratio. Other methods of analysis such as sentiment and macro-economic analysis is also briefly discussed. 
 \section{Key Terms}
 The relationship between stocks, REITs and Portfolios can be illustrated in the figure below.
 \begin{figure}[H]
@@ -498,9 +502,9 @@ The predictive value of each statement is as follows:
 Incorporating both technical and fundamental data into machine learning models can provide a more holistic picture to the analysis and better inform these models with an extended set of short, medium and long term features.
 
 \subsection{Alpha Formulas}
-According to quant researcher \cite{tulchinsky_finding_2019}, an Alpha is a formula that determines how much capital to allocate to each stock every day. A good alpha allocates capital in a way that results in a high sharpe ratio for the entire portfolio.\\
+According to quant researcher Tulchinsky (2019), an Alpha is a formula that determines how much capital to allocate to each stock every day. A good alpha allocates capital in a way that results in a high sharpe ratio for the entire portfolio.\\
 
-Here are two examples of alpha formulas used in real-life trading from a paper by \cite{kakushadze_101_2016}: \\
+Here are two examples of alpha formulas used in real-life trading from a paper by Kakushadze (2016): \\
 
 Alpha 1: $(((high * low)^{0.5}) - vwap)$\\
 
@@ -535,13 +539,13 @@ The total sum of the Profit/Loss for every ticker is the PnL from the day's inve
 This paper seeks to apply Alpha formulas to allocate REIT portfolios, and go further by developing a Genetic Algorithm inspired by Charles Darwin's theory of evolution to search for strong Alphas to Optimise Real Estate Portfolios. 
 
 \subsection{Other Methods of Analyses}
-Sentiment Analysis: Given that share prices in the short run are largely driven by investor sentiment, some researchers have employed Natural Language Processing (NLP) techniques to process trade forum discussions and financial news for trade decision making resulting in good sharpe ratios \cite{alexandria_unlocking_2023}. \\
+Sentiment Analysis: Given that share prices in the short run are largely driven by investor sentiment, some researchers have employed Natural Language Processing (NLP) techniques to process trade forum discussions and financial news for trade decision making resulting in good sharpe ratios (Alexandria, 2023). \\
 
-Macro-economic Analysis: 
+Macro-economic Analysis: Considering various measures of the wider economic environment such as GDP growth rates, unemployment rates, inflation and interest rates are important as well because these are strong factors that can influence the overall market performance. It suggests the broader market direction.
 
-
+\begin{landscape}
+\titlespacing{\chapter}{53pt}{-70pt}{1cm}% <-- spacing of title bar
 \chapter{Literature Review of Portfolio Optimisation Techniques}
-\section{Optimal Portfolio Theory}
 
 \def\fillandplacepagenumber{%
  \par\pagestyle{empty}%
@@ -552,32 +556,32 @@ Macro-economic Analysis:
    \hbox to\linewidth{%
      \hfil\thepage\hfil}\vss}}
 
-\begin{landscape}
+
   
   \titlespacing{\section}{0pt}{-150pt}{0cm}% <-- spacing of title bar
   \section{Comparison of Traditional and Machine Learning Techniques}
   \begin{table}[H]
-    \begin{adjustwidth}{-1.9cm}{-1.9cm}
+    \begin{adjustwidth}{-1.25cm}{-1.25cm}
     \begin{tabular}{|p{2.6cm}|p{2.7cm}|p{2.7cm}|p{3.5cm}|p{5cm}|p{5cm}|p{4cm}|}
     \hline
     \textbf{Methods} & \textbf{Data Inputs} & \textbf{Objectives} & \textbf{Scope for REITs} & \textbf{Strengths} & \textbf{Weaknesses} & \textbf{References}  
-    \\ \hline Autoregressive Integrated Moving Average (ARIMA) & Daily Price-Volume Data & Stock Price Prediction and Clustering & Stock Price Prediction & +Suitable for short-term time-series analysis \par+ Widely used in the field of finance for prediction \par+ More explanable than complex ML models & \par-Unsatisfactory for long term prediction \par-Higher RMSE than ML models   & \cite{ariyo_stock_2014},\par \cite{habbab_machine_2022},\par   \cite{obthong_survey_2020}         
-    \\ \hline Generalised AutoRegressive Conditional Heteroskedasticity (GARCH) & Daily Commodities Price-Volume data & Stock Volatility Prediction & Stock Volatility Prediction & +Outperforms ARIMA for price prediction and volatility forcasting & - Model assumes volatility can be predicted based on past returns, but volatility in reality is very unpredicatable & \cite{fiszeder_what_2020},   \cite{lama_modelling_2015}, \cite{yuan_garch_2017}           
-    \\ \hline Multiple Linear Regression (MLR) & Daily Price-Volume Data & Stock Price Prediction & Stock Price Prediction & +Relatively low RMSE error for stock price prediction \par+ Relatively easy to implement & - Only considers input features and not historical price data  & \cite{obthong_survey_2020}, \cite{shakhla_stock_2020}
-    \\ \hline \rowcolor[gray]{.8}Recurrent Neural Networks (RNN) & Daily Price-Volume Data & Stock Price Prediction & & +Relatively low RMSE error for stock price prediction\par + Remembers historical stock prices & - Susceptible to vanishing and exploding gradient problem & \cite{dey_comparative_2021} 
-    \\ \hline
+    \\ \hline Autoregressive Integrated Moving Average (ARIMA) & Daily Price-Volume Data & Stock Price Prediction and Clustering & Stock Price Prediction & +Suitable for short-term time-series analysis \par+ Widely used in the field of finance for prediction \par+ More explanable than complex ML models & \par-Unsatisfactory for long term prediction \par-Higher RMSE than ML models   & (Ariyo et.al., 2014),\par (Habbab \& Kampouridis, 2022),\par   (Obthong et. al., 2020)        
+    \\ \hline Generalised AutoRegressive Conditional Heteroskedasticity (GARCH) & Daily Commodities Price-Volume data & Stock Volatility Prediction & Stock Volatility Prediction & +Outperforms ARIMA for price prediction and volatility forcasting & - Model assumes volatility can be predicted based on past returns, but volatility in reality is very unpredicatable & (Fiszeder \& Chung, 2020),   (Lama et. al., 2015), (Yuan et. al, 2017           
+    \\ \hline Multiple Linear Regression (MLR) & Daily Price-Volume Data & Stock Price Prediction & Stock Price Prediction & +Relatively low RMSE error for stock price prediction \par+ Relatively easy to implement & - Only considers input features and not historical price data  & (Obthong et. al., 2020), (Shakhla et. al., 2023)
+    \\ \hline 
     \end{tabular}
   \end{adjustwidth}
   \end{table}
   \section{Comparison of Traditional and Machine Learning Techniques (Continued)}
   \begin{table}[H]
-    \begin{adjustwidth}{-1.9cm}{-1.9cm}
+    \begin{adjustwidth}{-1.25cm}{-1.25cm}
     \begin{tabular}{|p{2.6cm}|p{2.7cm}|p{2.7cm}|p{3.5cm}|p{5cm}|p{5cm}|p{4cm}|}
     \hline
     \textbf{Methods} & \textbf{Data Inputs} & \textbf{Objectives} & \textbf{Scope for REITs} & \textbf{Strengths} & \textbf{Weaknesses} & \textbf{References}  
-    \\ \hline Long-Short Term Memory (LSTM) & Daily Price-Volume Data & Stock Price Prediction & Stock Price Prediction & + One of the lowest RMSE error for financial time series prediction \par+ Remembers historical stock prices which are good indicators of future prices \par+ Solves the vanishing and exploding gradient problem & - Mixed results when predicting REIT stock prices & \cite{axelsson_univariate_2023},   \cite{habbab_machine_2022}, \cite{obthong_survey_2020} 
-    \\ \hline Random Forest (RF) & Daily Price-Volume Data, Fundamental Data & Stock Price Prediction & & + One of the few papers to incorporate fundamental data into machines learning models & - Relatively low sharpe ratio compared to market indexes & \cite{cao_fundamental_2021},   \cite{huang_machine_2021}  
-    \\ \hline Genetic Algorithms & Daily Price-Volume Data & Stock Price Prediction and Clustering & & + Suitable for problems with a large search space \par+ Works well with large time-series data & & \cite{obthong_survey_2020}
+    \\ \hline\rowcolor[gray]{.8}Recurrent Neural Networks (RNN) & Daily Price-Volume Data & Stock Price Prediction & & +Relatively low RMSE error for stock price prediction\par + Remembers historical stock prices & - Susceptible to vanishing and exploding gradient problem & (Dey et. al., 2021) 
+    \\ \hline Long-Short Term Memory (LSTM) & Daily Price-Volume Data & Stock Price Prediction & Stock Price Prediction & + One of the lowest RMSE error for financial time series prediction \par+ Remembers historical stock prices which are good indicators of future prices \par+ Solves the vanishing and exploding gradient problem & - Mixed results when predicting REIT stock prices & (Axelsson \& Song, 2023),   (Habbab \& Kampouridis, 2022), (Obthong et. al., 2020) 
+    \\ \hline\rowcolor[gray]{.8} Random Forest (RF) & Daily Price-Volume Data, Fundamental Data & Stock Price Prediction & & + One of the few papers to incorporate fundamental data into machines learning models & - Relatively low sharpe ratio compared to market indexes & (Cao, 2021), (Huang et. al., 2021)  
+    \\ \hline Genetic Algorithms & Daily Price-Volume Data & Stock Price Prediction and Clustering & & + Suitable for problems with a large search space \par+ Works well with large time-series data & & (Obthong et. al., 2020) 
     \\ \hline
     \end{tabular}
   \end{adjustwidth}
@@ -597,7 +601,7 @@ A recent paper aimed at predicting REIT share prices through 5 machine learning 
 
 \begin{figure}[H]
   \centerline{\includegraphics[width=5cm]{lit_review_reit_rmse}}
-  \caption{RMSE results for REITs using various ML Models (Source: \cite{habbab_-depth_2024})}
+  \caption{RMSE results for REITs using various ML Models (Source: Habbab \& Kampouridis, 2024)}
   \label{fig:lit_review_rmse}
 \end{figure}
 
@@ -620,7 +624,7 @@ From the literature review in Section 3.3, it appears that there are the followi
 
 \titleformat{\chapter}[block]
   {\normalfont\huge\bfseries}{\thechapter.}{1em}{\Huge\centering}
-\titlespacing*{\chapter}{0pt}{150pt}{0pt}
+\titlespacing*{\chapter}{0pt}{230pt}{0pt}
 \setcounter{chapter}{1}
 \renewcommand{\thechapter}{\Roman{chapter}}
 \chapter{Innovation}
@@ -851,10 +855,10 @@ For the Neural Network implementation, we swap out the model in the line of code
 
 This paper has opted for a 3 layer NN model starting from 22 inputs to 17, 8 followed by 3 and uses a Rectified Linear Unit (ReLU) activation function. Likewise it produces the Table \ref{table:mlr_pred} for every ticker.\\
 
-The inputs to the LSTM model are slightly different. A lookback window of 7 days is created by shifting the closing price one day backwards at a time for 7 days to form the additional 7 features as in the Table \ref{table:lstm_close_shift}.
+The inputs to the LSTM model are slightly different. A lookback window of 7 days is created by shifting the closing price one day backwards at a time for 7 days to form the additional 7 features as in the Table 5.2.
 
 \begin{table}[H]
-  \begin{adjustwidth}{-2.7cm}{-2.7cm}
+  \begin{adjustwidth}{-1.6cm}{-1.6cm}
   \caption{Preprocessed 7 Day Lookback Window for LSTM}
   \begin{tabular}{@{} l *{9}{S[table-format=-1.1]} @{}} 
   \toprule
@@ -865,7 +869,7 @@ The inputs to the LSTM model are slightly different. A lookback window of 7 days
   \bottomrule
   \end{tabular}
   \end{adjustwidth}  
-  \label{table:lstm_close_shift}
+  \label{table:lstm_close_shift2}
 \end{table}
 
 These prior days closing prices are appended to the 22 features input into the LSTM model. The line of code in red in Listing 5.1 is also replaced with an LSTM model in Listing 5.3. 
@@ -1028,7 +1032,7 @@ In using the GA to search for outperforming Alpha Trees, two good performing par
 \end{figure}
 
 \subsection{Application of Genetic Algorithms to Alpha Trees}
-In order to implement the ideas in Section 5.2.1, a series of functions in the following subsections were created.
+In order to implement the ideas in Section 5.2.1, a series of functions in the following subsections are created.
 \subsubsection{Generate Starting Population}
 The function in Listing 5.6 generates the first population of Alphas from which the GA will work on.
 
@@ -1044,7 +1048,7 @@ The function in Listing 5.6 generates the first population of Alphas from which 
 
 
 \subsubsection{Objective Function}
-The objective function evaluates the average profit of an Alpha over a one year period with a 1\% transaction cost to determine its performance. 
+The objective function evaluates the average profit of an Alpha over a one year period with a 1\% transaction cost factored in to determine its performance. 
 
 \begin{lstlisting}[language=Python, caption=Objective Function Pseudocode, basicstyle=\footnotesize\ttfamily]
   def objectve(tickers_price_data,Alpha):
@@ -1066,6 +1070,7 @@ The selection function defines how parent Alphas are selected from the populatio
 \end{lstlisting}
 
 \subsubsection{Crossover}
+Next, the Crossover function, which is the core of the GA and implements the reproduction between parents to produce an offspring.
 \begin{lstlisting}[language=Python, caption=Crossover Function Pseudocode, basicstyle=\footnotesize\ttfamily]
   r_cross = probability of crossover occuring
   def crossover(parent1,parent2,r_cross):
@@ -1084,7 +1089,7 @@ The selection function defines how parent Alphas are selected from the populatio
 \end{lstlisting}
 
 \subsubsection{Mutation}
-
+Followed by a crossover function which determines at rate at which certain datafields are mutated (i.e. randomly changed to another valid datafield).
 \begin{lstlisting}[language=Python, caption=Mutation Function Pseudocode, basicstyle=\footnotesize\ttfamily]
   r_mut = probability of mutation occuring
   def mutation(alpha,fields,r_mut):
@@ -1095,7 +1100,7 @@ The selection function defines how parent Alphas are selected from the populatio
 \end{lstlisting}
 
 \subsubsection{Genetic Algorithm}
-
+The overall GA function which calls the various parts above is as follows:
 \begin{lstlisting}[language=Python, caption=Genetic Algorithm Pseudocode, basicstyle=\footnotesize\ttfamily]
 define genetic_algorithm(objective_function, datafields, 
                           n_iter, n_pop, r_cross, r_mut):
@@ -1129,7 +1134,7 @@ return best,best_eval
 \end{lstlisting}
 
 \subsection{Portfolio Allocation Using Alpha}
-The best alpha is applied in the manner explained in Figure \ref{fig:alpha table} to create the column in yellow as illustrated in Figure \ref{fig:pnl_table}. By taking the cumulative sum of the yellow column we create the column in green.
+The best Alpha returned from the GA is applied in the manner explained in Figure \ref{fig:alpha table} to create the column in yellow as illustrated in Figure \ref{fig:pnl_table}. By taking the cumulative sum of the yellow column we create the column in green.
 \begin{figure}[H]
   \centerline{\includegraphics[width=7cm]{pnl}}
   \caption{Daily and Cumulative PnL}
@@ -1154,7 +1159,7 @@ The method of measuring performance is the same used in the Machine Learning app
 
 \titleformat{\chapter}[block]
   {\normalfont\huge\bfseries}{\thechapter.}{1em}{\Huge\centering}
-\titlespacing*{\chapter}{0pt}{150pt}{0pt}
+\titlespacing*{\chapter}{0pt}{230pt}{0pt}
 \setcounter{chapter}{2}
 \renewcommand{\thechapter}{\Roman{chapter}}
 \chapter{Experiments}
@@ -1166,34 +1171,61 @@ The method of measuring performance is the same used in the Machine Learning app
 \renewcommand{\thechapter}{\arabic{chapter}}
 \setcounter{chapter}{5}
 \pagenumbering{arabic}
-\chapter{Post-processed Financial Datasets}
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{landscape}
+\chapter{Post-processed Financial Dataset}
+Figure \ref{fig:post_processed_data} presents a sample of the post-processed data for a single Ticker of its 23 fundamental and technical features. This extends the analysis beyond the usual price-volume data used in ML. Data for 150 tickers and up to 20 years are used to train the models.
+\begin{figure}[H]
+  \centerline{\includegraphics[width=23cm]{post-processed data}}
+  \caption{Input Features for ML Models}
+  \label{fig:post_processed_data}
+\end{figure}
+
+\end{landscape}
 
 \chapter{Machine Learning Results}
+This section presents the results of porfolio allocation using MLR, NN and LSTM models. 
 \section{Evaluating Stock Price Predictions}
+In terms of the first part of the ML approach of stock price prediction, it appears all 3 models have predicted prices that closely mirror the actual prices in Figure \ref{fig:PLD_price_pred}.
 \begin{figure}[H]
   \centerline{\includegraphics[width=17cm]{ML Predictions PLD Price}}
   \caption{PLD Share Price Predicted vs Actual}
   \label{fig:PLD_price_pred}
 \end{figure}
-
+However, comparing their Mean Square Errors (MSE) reveals that LSTM provides the most accurate price prediction, followed by NN and then LR, with a MSE of 212, 252 and 323 respectively in Figure \ref{fig:MSE_ML}. 
 \begin{figure}[H]
   \centerline{\includegraphics[width=13cm]{MSE of ML models}}
   \caption{Mean Squared Error of Prediction Models}
   \label{fig:MSE_ML}
 \end{figure}
+It appears that even while including fundamental data features, LSTM's memory of historical price information does aid its ability to identify trends and make more accurate predictions (Obthong et. al.,2020). And NN's multiple layers help to further reduce the error in predictions.
 
-\subsection{Multiple Linear Regression (MLR)}
-\subsection{Neural Networks (NN)}
-\subsection{Long-Short Term Memory (LSTM)}
 \section{Trade Execution Results with Different Parameters}
+In the second phase of the ML approach, the buy/sell decisions are made based on the predicted prices. Using MLR as an example, where shorting is not allowed, the total value of each ticker after trade execution over the test period from 2019 to 2024 is shown in Figure \ref{fig:portfolio_movement}.
 
 \begin{figure}[H]
-  \centerline{\includegraphics[width=20cm]{ML_portfolio_value_movement}}
+  \centerline{\includegraphics[width=16cm]{ML_portfolio_value_movement}}
   \caption{Value of Each Ticker As Portfolio Allocation Occurs Over The Period}
   \label{fig:portfolio_movement}
 \end{figure}
 
-Correspondingly, the cash balances after various stock tickers are bought or shorted is given in Figure \ref{fig:Cash Balance of Portfolio}.
+Each line in Figure \ref{fig:portfolio_movement} represents the total value of one out of the 150 investible tickers throughout the portfolio allocation period. Correspondingly, the cash balances after various stock tickers are bought or sold is given in Figure \ref{fig:Cash Balance of Portfolio}. The sum of the total daily value of stocks and the cash balance for the day will result in Figure \ref{fig:Total portfolio Value}, which is the total portfolio value throughout the investment horizon.\\
+
+The Figures show an inverse relationship between cash balances and value of shares held because cash is traded for shares. The total portfolio value was maintained consistently above the starting investment of 10 Million, although it spiked in early 2020 and fell sharply thereafter. It is worthy to note that the COVID-19 pandemic started to seriously impact the financial markets in mid-2020 which coincided with the total fall in portfolio value. \\
+
+The same trade execution logic is implemented for NN and LSTM as well, generating the total portfolio value graph in Figure \ref{fig:Total portfolio Value}, upon which porfolio performance is evaluated.
+
 \begin{figure}[H]
   \centerline{\includegraphics[width=13cm]{LR Cash Balance}}
   \caption{Cash Balance of Portfolio Over The Period}
@@ -1203,7 +1235,7 @@ Correspondingly, the cash balances after various stock tickers are bought or sho
 \begin{figure}[H]
   \centerline{\includegraphics[width=13cm]{Total Portfolio Value LR}}
   \caption{Total Portfolio Value (Stocks + Cash) Over Time}
-  \label{fig:Cash Balance of Portfolio}
+  \label{fig:Total portfolio Value}
 \end{figure}
 
 
@@ -1215,7 +1247,12 @@ Correspondingly, the cash balances after various stock tickers are bought or sho
   \caption{Comparision of Results for MLR/NN/LSTM}
   \label{fig:Comparison of Results}
 \end{figure}
+After the total portfolio value graph of each approach is generated, the Risk and Profitability measures are calculated with the formulas in Section 5.1.3.\\
 
+
+From the results, it appears that trading without shorting is superior in terms of profitability and sharpe ratio. This is possibly because short selling creates the potential for unlimited losses (Bryant, 2023), because regardless of how high share prices rise, the investor will have to buy back the share to return to the market maker. \\
+
+Surprisingly, the NN approach has the highest Sharpe Ratio of 3.5 followed by LR with 2.53 and LSTM with 1.52. This could be because of how the trade execution logic is devised, which requires the change predicted to be above the action threshold percentage. The changes predicted by the LSTM model are relatively small and hence much fewer trades are made resulting in less profits. Nevertheless, NN and MLR have resulted in a profitable trading strategy that minimises risk and maximises profits with a sharpe ratio greater than 2. 
 
 
 \chapter{Alpha Tree Search Results}
@@ -1234,16 +1271,25 @@ The GA search of the Alpha Tree was run 5 times, with 20 iterations each and it 
   \caption{Cumulative PnL for Top 3 Alphas}
   \label{fig:pnl_top_3}
 \end{figure}
-All 3 top performing Alphas resulting from the Genetic Algorithm have a high sharpe ratio and annualised return (Figure \ref{fig:alphas_generated}) and a strong and consistently growing profit over the years (Figure \ref{fig:pnl_top_3}). Using a starting investment capital of 20 Million dollars, all three Alphas managed to reap more than 100\% returns over a 3 year period demonstrating the strength of the GA technique of searching for outperforming Alphas. Moreover, the risk is maintained at a relatively low level at a 5\% standard deviation. This suggests that even in the worst case scenarios trading with these Alphas would still generate strong supernormal profits.
+All 3 top performing Alphas resulting from the Genetic Algorithm have a high sharpe ratio of 11.14, 8.87 and 8.61. and annualised return of 55.5\%, 42.3\% and 41.7\% respectively (Figure \ref{fig:alphas_generated}) and a strong and consistently growing profit over the years (Figure \ref{fig:pnl_top_3}). \\
+
+Using a starting investment capital of 20 Million dollars, all three Alphas managed to reap more than 100\% returns over a 3 year period demonstrating the strength of the GA technique of searching for outperforming Alphas. Moreover, the risk is maintained at a relatively low level at a 5\% standard deviation. This suggests that even in the worst case scenarios trading with these Alphas would still generate strong supernormal profits.
 
 
 \chapter{Conclusion}
+This section summarises the approaches by comparing them against the average REIT stock, industry benchmarks i.e. the REIT market indexes and traditional measures like ARIMA and GARCH. It will then compare the key characteristics of the models and summarise the key findings of the project. 
 \section{Benchmarking Against Indexes, ARIMA, GARCH}
 \begin{figure}[H]
-  \centerline{\includegraphics[width=20cm]{final comparison}}
+  \centerline{\includegraphics[width=18cm]{final comparison}}
   \caption{Benchmarking This Paper's Approaches}
   \label{fig:final_comparison}
 \end{figure}
+
+From Figure \ref{fig:final_comparison}, it appears that ML models significantly outperform traditional approaches to portfolio optimisation with more than double the sharpe ratio. The Genetic Algorithm especially outperforms with its high sharpe ratio of 9.72 compared to the market index of 0.14 or the average REIT stock of 0.6. In terms of risk and volatility, the ML models also have significantly lower volatity than the market index and ARIMA as represented by the blue line.
+
+
+
+
 
 
 
@@ -1254,29 +1300,69 @@ All 3 top performing Alphas resulting from the Genetic Algorithm have a high sha
   \label{fig:final_comparison_of_models}
 \end{figure}
 
+The spider web chart in Figure \ref{fig:final_comparison_of_models} compares the strengths and weaknesses of this paper's approaches and the traditional ARIMA. \\
 
+GA significantly outperforms all other methods in terms of Profitability and the ML applications adopted in this paper have generally greater profit and lower risk than the index and ARIMA. Although LSTM only has average profitability it is one of the few approaches like ARIMA with an ability to recall and incorporate a window of past data. LSTM also has the highest predictive accuracy followed by NN. 
 
 \section{Key Findings}
-- GA search for Alphas significantly outperforms other approaches 
-  > possibly  because of a market neutral portfolio 
-
-- Machine learning approaches outpeform traditional approaches
+The key findings for this paper are as follows:
+\begin{enumerate}
+  \item {The novel application of Genetic Algorithms to search for outperforming Alphas is successful and performs well in optimising real estate portfolios. It results in profitability that well exceeds the market average while minimising risk.}
+  \item {The extension of input data for ML models to include fundamental data results in acceptable predictions and portfolio returns that have a sharpe ratio of more than 2 for NN and LR approaches. }
+  \item {As whole the ML approaches and GA approach adopted by this paper outperforms the traditional and market approaches.}
+  \item {It is surprising that despite LSTM's highest accuracy in predicting the next day's closing price, the portfolio allocation based on LSTM's predictions perform the poorest. This emphasises that for the ML models, the trade execution logic that implements the actual portfolio allocation based on predictions has a large effect on the overall portfolio performance beyond price prediction.  }
+\end{enumerate}
 
 \section{Major Contribution and Creativity}
+This paper demonstrated creativity by:
+\begin{enumerate}
+  \item {Combining the ideas of Genetic Algorithms and Alphas to REITs, and writing a new search algorithm that managed to find outperforming Alpha formulas to optimise the allocation of Real Estate Portfolios.}
+  \item {Incorporating fundamental analysis into ML models beyond the usual technical analysis done by most papers in the field.}
+\end{enumerate}
 
-- Novel and profitable approach toward REIT portfolio optimisation using Alphas (Creative use of Genetic Algorithms and applying it to searching for Alphas)
-- Machine Learning with Fundamental Data sets over 150 Tickers, a way to purchase that data at a low price for future research
-- Implementation of Trade Execution logic (code can be found on github)
-
-
+Moreover this Paper's main contribution are:
+\begin{enumerate}
+  \item {Real Estate Portfolio Optimisation Strategies using GA and ML approaches that maximise profits and minimise risk that significantly outperform the market with a sharpe ratio greater than 2.}
+  \item {The Python code for the GA Search Algorithm}
+  \item {The implementation and Python code of the trading agent and trade excecution logic that does portfolio allocation based on predicted prices from ML models. Most papers (as seen in the literature review) focus on price prediction, but this paper also contributes the mechanism for portfolio optimisation.}
+  \item {ML on Fundamental Data with 20+ feateures for 150 Tickers for the past 20 years. A dataste that covers more than 20\% of all REITs in the world, making this study especially representative. Also providing the directions to purchase this data at an affordable price for future research.}
+\end{enumerate}
 
 \section{Future Work}
-- expand datafields and operators in genetic algorithm (currently fundamental freqency diff from daily need to resolve), give examples  of such examples of operators 
-- 
 
+The Genetic Algorithm approach has great room for exploration. This paper's code only uses 4 basic operators, but many more operators such as ranking, correlation etc can be passed into the code to enhance the permutation of generated Alphas. In addition, more valid datafields can be added to the GA code to create a wider range of Alphas.\\
 
+As observed in this paper, the trade execution logic has a large impact on the overall profitability of the portfolio allocation for ML price prediction approaches. Hence, more experiments can be done with regards to the various parameters input into the trade execution code, and possibly refine the logic to improve performance. It is also conceivable that trade execution can be done with a Reinforcement Learning agent.
 
-\subsection{More Operators and Features for Alphas}
+\pagebreak
+
+hi
+\cite{sheth_predicting_2023}
+\cite{obthong_survey_2020}
+\cite{habbab_-depth_2024}
+\cite{tostevin_total_2023}
+\cite{nareit_global_2024}
+\cite{oberlechner_importance_2001}
+\cite{tulchinsky_finding_2019}
+\cite{wang_alpha-gpt_2023}
+\cite{ruse_charles_1975}
+\cite{aguilar-rivera_genetic_2015}
+\cite{tulchinsky_finding_2019}
+\cite{kakushadze_101_2016}
+\cite{alexandria_unlocking_2023}
+\cite{ross_fundamentals_2021} 
+\cite{ariyo_stock_2014}
+\cite{habbab_machine_2022}
+\cite{obthong_survey_2020} 
+\cite{fiszeder_what_2020}
+\cite{lama_modelling_2015}
+\cite{yuan_garch_2017}
+\cite{shakhla_stock_2020}
+\cite{dey_comparative_2021} 
+\cite{axelsson_univariate_2023}
+\cite{cao_fundamental_2021}
+\cite{huang_machine_2021}  
+\citep{bryant_why_2023}
 
 
 

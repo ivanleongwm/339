@@ -8,47 +8,48 @@ Database file #1: references.bib
 Warning--empty journal in cao_fundamental_2021
 Warning--empty booktitle in habbab_machine_2022
 Warning--empty booktitle in obthong_survey_2020
+Warning--empty publisher in ross_fundamentals_2021
 Warning--empty journal in shakhla_stock_2020
 Warning--empty journal in yuan_garch_2017
-You've used 22 entries,
+You've used 24 entries,
             2118 wiz_defined-function locations,
-            612 strings with 7960 characters,
-and the built_in function-call counts, 6800 in all, are:
-= -- 642
-> -- 345
+            619 strings with 8115 characters,
+and the built_in function-call counts, 7215 in all, are:
+= -- 677
+> -- 359
 < -- 3
-+ -- 138
-- -- 114
-* -- 452
-:= -- 1140
-add.period$ -- 66
-call.type$ -- 22
-change.case$ -- 123
++ -- 144
+- -- 118
+* -- 470
+:= -- 1209
+add.period$ -- 71
+call.type$ -- 24
+change.case$ -- 130
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 246
-empty$ -- 540
-format.name$ -- 114
-if$ -- 1409
+cite$ -- 30
+duplicate$ -- 265
+empty$ -- 584
+format.name$ -- 118
+if$ -- 1497
 int.to.chr$ -- 0
-int.to.str$ -- 22
-missing$ -- 15
-newline$ -- 112
-num.names$ -- 45
-pop$ -- 163
+int.to.str$ -- 24
+missing$ -- 17
+newline$ -- 121
+num.names$ -- 49
+pop$ -- 181
 preamble$ -- 1
-purify$ -- 101
+purify$ -- 107
 quote$ -- 0
-skip$ -- 191
+skip$ -- 205
 stack$ -- 0
-substring$ -- 316
-swap$ -- 42
+substring$ -- 326
+swap$ -- 44
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 86
-warning$ -- 5
-while$ -- 64
-width$ -- 24
-write$ -- 229
-(There were 5 warnings)
+type$ -- 92
+warning$ -- 6
+while$ -- 68
+width$ -- 26
+write$ -- 246
+(There were 6 warnings)
