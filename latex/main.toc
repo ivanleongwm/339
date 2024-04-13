@@ -22,39 +22,39 @@
 \contentsline {section}{\numberline {3.2}Comparison of Traditional and Machine Learning Techniques (Continued)}{14}{}%
 \contentsline {subsection}{\numberline {3.2.1}Predictive Accuracy}{15}{}%
 \contentsline {subsection}{\numberline {3.2.2}Gaps in Past Research to be Addressed}{15}{}%
-\contentsline {chapter}{\numberline {II}Innovation}{1}{}%
-\contentsline {chapter}{\numberline {4}Datasets}{2}{}%
-\contentsline {section}{\numberline {4.1}Extended Fundamental Data Features}{2}{}%
-\contentsline {section}{\numberline {4.2}Feature Exploration with Decision Trees}{2}{}%
-\contentsline {section}{\numberline {4.3}Feature Selection}{3}{}%
-\contentsline {chapter}{\numberline {5}Methodology}{5}{}%
-\contentsline {section}{\numberline {5.1}Machine Learning for REITs Portfolio Optimisation}{6}{}%
-\contentsline {subsection}{\numberline {5.1.1}MLR / NN / LSTM Predictions with Extended Features}{6}{}%
-\contentsline {subsection}{\numberline {5.1.2}Trade Execution Logic}{9}{}%
-\contentsline {subsection}{\numberline {5.1.3}Performance Evaluation}{11}{}%
-\contentsline {section}{\numberline {5.2}Genetic Algorithm (GA) Search for Outperforming Alphas}{12}{}%
-\contentsline {subsection}{\numberline {5.2.1}Alpha Tree}{13}{}%
-\contentsline {subsection}{\numberline {5.2.2}Application of Genetic Algorithms to Alpha Trees}{14}{}%
-\contentsline {subsubsection}{\numberline {5.2.2.1}Generate Starting Population}{14}{}%
-\contentsline {subsubsection}{\numberline {5.2.2.2}Objective Function}{15}{}%
-\contentsline {subsubsection}{\numberline {5.2.2.3}Selection}{15}{}%
-\contentsline {subsubsection}{\numberline {5.2.2.4}Crossover}{15}{}%
-\contentsline {subsubsection}{\numberline {5.2.2.5}Mutation}{16}{}%
-\contentsline {subsubsection}{\numberline {5.2.2.6}Genetic Algorithm}{16}{}%
-\contentsline {subsection}{\numberline {5.2.3}Portfolio Allocation Using Alpha}{17}{}%
-\contentsline {subsection}{\numberline {5.2.4}Performance Evaluation}{18}{}%
-\contentsline {chapter}{\numberline {III}Experiments}{1}{}%
-\contentsline {chapter}{\numberline {6}Post-processed Financial Dataset}{2}{}%
-\contentsline {chapter}{\numberline {7}Machine Learning Results}{3}{}%
-\contentsline {section}{\numberline {7.1}Evaluating Stock Price Predictions}{3}{}%
-\contentsline {section}{\numberline {7.2}Trade Execution Results with Different Parameters}{4}{}%
-\contentsline {section}{\numberline {7.3}Overall Evaluation of Performances}{7}{}%
-\contentsline {chapter}{\numberline {8}Alpha Tree Search Results}{8}{}%
-\contentsline {section}{\numberline {8.1}Alphas Generated}{8}{}%
-\contentsline {section}{\numberline {8.2}Portfolio Allocation Results with Best Performing Alphas}{8}{}%
-\contentsline {chapter}{\numberline {9}Conclusion}{10}{}%
-\contentsline {section}{\numberline {9.1}Benchmarking Against Indexes, ARIMA, GARCH}{10}{}%
-\contentsline {section}{\numberline {9.2}Comparing Characteristics of Approaches}{11}{}%
-\contentsline {section}{\numberline {9.3}Key Findings}{12}{}%
-\contentsline {section}{\numberline {9.4}Major Contribution and Creativity}{12}{}%
-\contentsline {section}{\numberline {9.5}Future Work}{13}{}%
+\contentsline {chapter}{\numberline {II}Innovation}{15}{}%
+\contentsline {chapter}{\numberline {4}Datasets}{16}{}%
+\contentsline {section}{\numberline {4.1}Extended Fundamental Data Features}{16}{}%
+\contentsline {section}{\numberline {4.2}Feature Exploration with Decision Trees}{16}{}%
+\contentsline {section}{\numberline {4.3}Feature Selection}{17}{}%
+\contentsline {chapter}{\numberline {5}Methodology}{19}{}%
+\contentsline {section}{\numberline {5.1}Machine Learning for REITs Portfolio Optimisation}{20}{}%
+\contentsline {subsection}{\numberline {5.1.1}MLR / NN / LSTM Predictions with Extended Features}{20}{}%
+\contentsline {subsection}{\numberline {5.1.2}Trade Execution Logic}{23}{}%
+\contentsline {subsection}{\numberline {5.1.3}Performance Evaluation}{25}{}%
+\contentsline {section}{\numberline {5.2}Genetic Algorithm (GA) Search for Outperforming Alphas}{26}{}%
+\contentsline {subsection}{\numberline {5.2.1}Alpha Tree}{27}{}%
+\contentsline {subsection}{\numberline {5.2.2}Application of Genetic Algorithms to Alpha Trees}{28}{}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}Generate Starting Population}{28}{}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}Objective Function}{29}{}%
+\contentsline {subsubsection}{\numberline {5.2.2.3}Selection}{29}{}%
+\contentsline {subsubsection}{\numberline {5.2.2.4}Crossover}{29}{}%
+\contentsline {subsubsection}{\numberline {5.2.2.5}Mutation}{30}{}%
+\contentsline {subsubsection}{\numberline {5.2.2.6}Genetic Algorithm}{30}{}%
+\contentsline {subsection}{\numberline {5.2.3}Portfolio Allocation Using Alpha}{31}{}%
+\contentsline {subsection}{\numberline {5.2.4}Performance Evaluation}{32}{}%
+\contentsline {chapter}{\numberline {III}Experiments}{32}{}%
+\contentsline {chapter}{\numberline {6}Post-processed Financial Dataset}{33}{}%
+\contentsline {chapter}{\numberline {7}Machine Learning Results}{34}{}%
+\contentsline {section}{\numberline {7.1}Evaluating Stock Price Predictions}{34}{}%
+\contentsline {section}{\numberline {7.2}Trade Execution Results with Different Parameters}{35}{}%
+\contentsline {section}{\numberline {7.3}Overall Evaluation of Performances}{38}{}%
+\contentsline {chapter}{\numberline {8}Alpha Tree Search Results}{39}{}%
+\contentsline {section}{\numberline {8.1}Alphas Generated}{39}{}%
+\contentsline {section}{\numberline {8.2}Portfolio Allocation Results with Best Performing Alphas}{39}{}%
+\contentsline {chapter}{\numberline {9}Conclusion}{41}{}%
+\contentsline {section}{\numberline {9.1}Benchmarking Against Indexes, ARIMA, GARCH}{41}{}%
+\contentsline {section}{\numberline {9.2}Comparing Characteristics of Approaches}{42}{}%
+\contentsline {section}{\numberline {9.3}Key Findings}{43}{}%
+\contentsline {section}{\numberline {9.4}Major Contribution and Creativity}{43}{}%
+\contentsline {section}{\numberline {9.5}Future Work}{44}{}%

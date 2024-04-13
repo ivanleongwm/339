@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main"] 1713025199.72836 "main.aux" "main.bbl" "main" 1713025205.66481 0
+["bibtex main"] 1713025804.8406 "main.aux" "main.bbl" "main" 1713025938.66146 0
   "./references.bib" 1713023235 85560 6a5abf4d0236f424bf476c0250beaaea ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "main.aux" 1713025204 19647 7c62e4bfad28b0133d1c92eed121d910 "pdflatex"
+  "main.aux" 1713025937 19701 fda349068aabde013990f0ed0a741208 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1713025200.02902 "c:/Users/pc/Desktop/Thesis/339/latex/main.tex" "main.pdf" "main" 1713025205.66531 0
+["pdflatex"] 1713025933.75322 "c:/Users/pc/Desktop/Thesis/339/latex/main.tex" "main.pdf" "main" 1713025938.66187 0
   "2.pnlDay1.dat" 1712844688 64 2dae1e0246742a6f623652d4f8a62478 ""
   "2.pnlDay3.dat" 1712844688 65 c0fa4fa1aa91c479e4fc51de8fe665c2 ""
   "C:/Users/pc/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1712933929 82507 a9eef8696c92627b87e9975edea03b2a ""
@@ -282,7 +282,7 @@
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/trimspaces/trimspaces.sty" 1253169183 1380 971a51b00a14503ddf754cab24c3f209 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/pc/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
-  "c:/Users/pc/Desktop/Thesis/339/latex/main.tex" 1713025193 74934 e7451f55c592fc48468146b956d35771 ""
+  "c:/Users/pc/Desktop/Thesis/339/latex/main.tex" 1713025933 75282 ad7458d3676459c687fb64480d1675eb ""
   "graphics/1.nus_logo_full-horizontal.jpg" 1712844688 172263 381833ba130b5b7dd5894febec1f88f6 ""
   "graphics/Alphas Profit Over Time.png" 1712933827 38046 0f7632f3921655f80986cf3bf37f6b97 ""
   "graphics/Final Comparsion of Models.png" 1713015647 94912 28ece930acb41c89cc493e1af50a2779 ""
@@ -309,10 +309,10 @@
   "graphics/post-processed data.png" 1713001006 67406 1a2fffe450eba9d47acf47e37dec01c9 ""
   "graphics/selected_features.png" 1712844688 101918 329942cdb537c1977c17fe5bf9001e6c ""
   "graphics/transaction_objects.png" 1712899054 41350 8b7d95e0fc19e1d254e610ae9b36debc ""
-  "main.aux" 1713025204 19647 7c62e4bfad28b0133d1c92eed121d910 "pdflatex"
-  "main.bbl" 1713025199 5491 6a617201d904172c3124e6ecf7700b22 "bibtex main"
-  "main.tex" 1713025193 74934 e7451f55c592fc48468146b956d35771 ""
-  "main.toc" 1713025204 4697 193fd7da6105b052dc5ae7404d9da159 "pdflatex"
+  "main.aux" 1713025937 19701 fda349068aabde013990f0ed0a741208 "pdflatex"
+  "main.bbl" 1713025805 5491 6a617201d904172c3124e6ecf7700b22 "bibtex main"
+  "main.tex" 1713025933 75282 ad7458d3676459c687fb64480d1675eb ""
+  "main.toc" 1713025937 4715 addd347e59921dd0dc9608ee98c097d5 "pdflatex"
   (generated)
   "main.aux"
   "main.log"

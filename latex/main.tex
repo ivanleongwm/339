@@ -69,7 +69,7 @@
 \titleformat{\chapter}[display]{\Large}{\centering
   \MakeUppercase{\chaptername}\quad{\Huge\thechapter}}{10pt}{\titlerule[.5pt]\vspace{10pt}\centering
   \MakeUppercase}[\vspace{10pt}{\titlerule[.5pt]}]% <-- spacing of title bar
-\titlespacing{\chapter}{0pt}{-50pt}{1cm}% <-- spacing of title bar
+\titlespacing{\chapter}{0pt}{-20pt}{1cm}% <-- spacing of title bar
 
 
 \usepackage{amsthm, amsmath, amssymb, mathtools, mathbbol}
@@ -119,6 +119,11 @@ Also many thanks to Professor Chin Wei Ngan for taking the time out to assess th
 \end{center}
 \setcounter{secnumdepth}{3}
 \setcounter{tocdepth}{3}
+
+\titleformat{\chapter}[display]{\Large}{\centering
+  \MakeUppercase{\chaptername}\quad{\Huge\thechapter}}{10pt}{\titlerule[.5pt]\vspace{10pt}\centering
+  \MakeUppercase}[\vspace{10pt}{\titlerule[.5pt]}]% <-- spacing of title bar
+\titlespacing{\chapter}{0pt}{-50pt}{1cm}% <-- spacing of title bar
 
 
 \tableofcontents
@@ -635,7 +640,9 @@ From the literature review in Section 3.3, it appears that there are the followi
 \titlespacing{\chapter}{0pt}{-80pt}{1cm}% <-- spacing of title bar
 \renewcommand{\thechapter}{\arabic{chapter}}
 \setcounter{chapter}{3}
+
 \pagenumbering{arabic}
+\setcounter{page}{15}
 \chapter{Datasets}
 \section{Extended Fundamental Data Features}
 While many papers have obtained price-volume data from Yahoo Finance's API (yfinance), this data only contains 10 or so price-volume indicators listed in Appendix A. This paper goes further by obtaining a comprehensive list of 161 fundamental features from FinancialModelingPrep's (FMP) API\footnote{Although the datasource is proprietory and the author does not have permission to distribute the raw data, it can be easily purchased for a small fee at https://site.financialmodelingprep.com/.}, listed in Appendix B. 
@@ -1171,7 +1178,7 @@ The method of measuring performance is the same used in the Machine Learning app
 \renewcommand{\thechapter}{\arabic{chapter}}
 \setcounter{chapter}{5}
 \pagenumbering{arabic}
-
+\setcounter{page}{32}
 
 
 
